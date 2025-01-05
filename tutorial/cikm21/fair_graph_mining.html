@@ -1,173 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="gbk"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="description" content=""><meta name="author" content="">
-	<title>Jian Kang</title>
-	<!-- Bootstrap core CSS -->
-	<link href="http://jiank2.web.illinois.edu/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" /><!-- Custom styles for this template -->
-	<link href="http://jiank2.web.illinois.edu/css/small-business.css" rel="stylesheet" />
-	<link href="http://jiank2.web.illinois.edu/css/all.css" rel="stylesheet" />
-	<link href="http://jiank2.web.illinois.edu/css/academicons.css" rel="stylesheet" />
-	<style type="http://jiank2.web.illinois.edu/text/css">.content {
-      margin-top: 0;
-      margin-bottom: 0
-    }
-	</style>
-	<meta name="google-site-verification" content="qEih9m0y-6X0QuisQYfHSxOvkW-o5Q3dfxuQ5Z4JtGA" />
+
+<head>
+    <meta charset="gbk">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Jian Kang</title>
+    <!-- Bootstrap core CSS -->
+    <link href="http://jiank2.web.illinois.edu/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="http://jiank2.web.illinois.edu/css/small-business.css" rel="stylesheet" />
+    <link href="http://jiank2.web.illinois.edu/css/all.css" rel="stylesheet" />
+    <link href="http://jiank2.web.illinois.edu/css/academicons.css" rel="stylesheet" />
+    <style type="http://jiank2.web.illinois.edu/text/css">
+        .content {
+            margin-top: 0;
+            margin-bottom: 0
+        }
+    </style>
+    <meta name="google-site-verification" content="qEih9m0y-6X0QuisQYfHSxOvkW-o5Q3dfxuQ5Z4JtGA" />
 </head>
+
 <body><!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-<div class="container">
-    <a class="navbar-brand" href="http://jiank2.web.illinois.edu/tutorial/cikm21/fair_graph_mining.html">
-        <img alt="" class="img-fluid rounded img-responsive" src="img/site_logo.png" style="width:25%" />
-    </a>
-    <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse" type="button">
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-        <a class="navbar-brand" href="http://jiank2.web.illinois.edu/tutorial/cikm21/fair_graph_mining.html">
-            <h1>Fair Graph Mining</h1>
-        </a>
-    </div>
-</div>
-</nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="http://jiank2.web.illinois.edu/tutorial/cikm21/fair_graph_mining.html">
+                <img alt="" class="img-fluid rounded img-responsive" src="img/site_logo.png" style="width:25%" />
+            </a>
+            <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse" type="button">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <a class="navbar-brand" href="http://jiank2.web.illinois.edu/tutorial/cikm21/fair_graph_mining.html">
+                    <h1>Fair Graph Mining</h1>
+                </a>
+            </div>
+        </div>
+    </nav>
 
-<div class="container">
-<br><br>
+    <div class="container">
+        <br><br>
 
-<!-- Title -->
-<!--
+        <!-- Title -->
+        <!--
 <div class="my-4 text-left">
 <p class="h1 text-center">Fair Graph Mining</p>
 </div>
 -->
 
-<!-- Abstract -->
-<div class="my-4 text-left">
-<p class="h3">Abstract</p>
-<p>In today's increasingly connected world, graph mining plays a pivotal role in many real-world application domains, including social network analysis, recommendations, marketing and financial security. Tremendous efforts have been made to develop a wide range of computational models. However, recent studies have revealed that many widely-applied graph mining models could suffer from potential discrimination. Fairness on graph mining aims to develop strategies in order to mitigate bias introduced/amplified during the mining process. The unique challenges of enforcing fairness on graph mining include (1) theoretical challenge on non-IID nature of graph data, which may invalidate the basic assumption behind many existing studies in fair machine learning, and (2) algorithmic challenge on the dilemma of balancing model accuracy and fairness. This tutorial aims to (1) present a comprehensive review of state-of-the-art techniques in fairness on graph mining and (2) identify the open challenges and future trends. In particular, we start with reviewing the background, problem definitions, unique challenges and related problems; then we will focus on an in-depth overview of (1) recent techniques in enforcing group fairness, individual fairness and other fairness notions in the context of graph mining, and (2) future directions in studying algorithmic fairness on graphs. We believe this tutorial could be attractive to researchers and practitioners in areas including data mining, artificial intelligence, social science and beneficial to a plethora of real-world application domains.</p>
-</div>
+        <!-- Abstract -->
+        <div class="my-4 text-left">
+            <p class="h3">Abstract</p>
+            <p>In today's increasingly connected world, graph mining plays a pivotal role in many real-world application
+                domains, including social network analysis, recommendations, marketing and financial security.
+                Tremendous efforts have been made to develop a wide range of computational models. However, recent
+                studies have revealed that many widely-applied graph mining models could suffer from potential
+                discrimination. Fairness on graph mining aims to develop strategies in order to mitigate bias
+                introduced/amplified during the mining process. The unique challenges of enforcing fairness on graph
+                mining include (1) theoretical challenge on non-IID nature of graph data, which may invalidate the basic
+                assumption behind many existing studies in fair machine learning, and (2) algorithmic challenge on the
+                dilemma of balancing model accuracy and fairness. This tutorial aims to (1) present a comprehensive
+                review of state-of-the-art techniques in fairness on graph mining and (2) identify the open challenges
+                and future trends. In particular, we start with reviewing the background, problem definitions, unique
+                challenges and related problems; then we will focus on an in-depth overview of (1) recent techniques in
+                enforcing group fairness, individual fairness and other fairness notions in the context of graph mining,
+                and (2) future directions in studying algorithmic fairness on graphs. We believe this tutorial could be
+                attractive to researchers and practitioners in areas including data mining, artificial intelligence,
+                social science and beneficial to a plethora of real-world application domains.</p>
+        </div>
 
 
-<!-- Descriptions -->
-<div class="my-4 text-left">
-<p class="h3">Materials</p>
-<a href="http://jiank2.web.illinois.edu/files/cikm21/kang21fair.pdf" target="_blank">Detailed Description</a>
-<br>
-<a href="http://jiank2.web.illinois.edu/files/cikm21/kang21fair_slides.pdf" target="_blank">Slides</a>
-<br>
-<a href="https://drive.google.com/file/d/1SEi5RkCH76sX12eXM7mq_0eEIfXNHyv2/view?usp=sharing" target="_blank">Recording</a>
-</div>
+        <!-- Descriptions -->
+        <div class="my-4 text-left">
+            <p class="h3">Materials</p>
+            <a href="http://jiank2.web.illinois.edu/files/cikm21/kang21fair.pdf" target="_blank"
+                style="color:#1f52b0">Detailed Description</a>
+            <br>
+            <a href="http://jiank2.web.illinois.edu/files/cikm21/kang21fair_slides.pdf" target="_blank"
+                style="color:#1f52b0">Slides</a>
+            <br>
+            <a href="https://drive.google.com/file/d/1SEi5RkCH76sX12eXM7mq_0eEIfXNHyv2/view?usp=sharing" target="_blank"
+                style="color:#1f52b0">Recording</a>
+        </div>
 
 
-<!-- Schedule -->
-<div class="my-4 text-left">
-<p class="h3">Tentative Schedule</p>
-<p>We plan to hold 2 sessions during the conference.</p>
-<ul>
-    <li><strong>1st session</strong>: live presentation</li>
-        <ul>
-            <li><strong>CT time:</strong> Nov. 4th, 12pm-3pm CT</li>
-            <li><strong>UTC time:</strong> Nov. 4th 5pm-8pm UTC</li>
-        </ul>
-    
-    <li><strong>2nd session</strong>: pre-recorded videos</li>
-        <ul>
-            <li><strong>CT time:</strong> Nov. 4th, 9pm-12am CT</li>
-            <li><strong>UTC time:</strong> Nov. 5th 2am-5am UTC</li>
-        </ul>
-</ul>
-</div>
+        <!-- Schedule -->
+        <div class="my-4 text-left">
+            <p class="h3">Tentative Schedule</p>
+            <p>We plan to hold 2 sessions during the conference.</p>
+            <ul>
+                <li><strong>1st session</strong>: live presentation</li>
+                <ul>
+                    <li><strong>CT time:</strong> Nov. 4th, 12pm-3pm CT</li>
+                    <li><strong>UTC time:</strong> Nov. 4th 5pm-8pm UTC</li>
+                </ul>
+
+                <li><strong>2nd session</strong>: pre-recorded videos</li>
+                <ul>
+                    <li><strong>CT time:</strong> Nov. 4th, 9pm-12am CT</li>
+                    <li><strong>UTC time:</strong> Nov. 5th 2am-5am UTC</li>
+                </ul>
+            </ul>
+        </div>
 
 
 
-<!-- Outline -->
-<div class="my-4 text-left">
-<p class="h3">Outline</p>
-<ul>
-	<li>Introduction
-	    <ul>
-	        <li>Background and motivations</li>
-	        <li>Problem definitions and settings</li>
-	        <li>Key challenges</li>
-	        <li>Related problems</li>
-	    </ul>
-	</li>
-	<li>Part I: Group Fairness on Graphs
-	    <ul>
-	        <li>Fair graph ranking</li>
-	        <li>Fair graph clustering</li>
-	        <li>Fair graph embedding</li>
-	    </ul>
-	</li>
-	<li>Part II: Individual Fairness on Graphs
-	    <ul>
-	        <li>Optimization-based method</li>
-	        <li>Ranking-based method</li>
-	    </ul>
-	</li>
-	<li>Part III: Other Fairness Definitions on Graphs
-	    <ul>
-	        <li>Rawlsian fairness</li>
-	        <li>Degree-related fairness</li>
-	        <li>Counterfactual fairness</li>
-	    </ul>
-	</li>
-	<li>Part IV: Open Challenges and Future Directions
-	    <ul>
-	        <li>Fairness on dynamic graphs</li>
-	        <li>Fairness on multi-network mining</li>
-	        <li>Multi-resolution fairness on graphs</li>
-	        <li>Connections between group fairness and individual fairness on graphs</li>
-	    </ul>
-	</li>
-</ul>
-</div>
+        <!-- Outline -->
+        <div class="my-4 text-left">
+            <p class="h3">Outline</p>
+            <ul>
+                <li>Introduction
+                    <ul>
+                        <li>Background and motivations</li>
+                        <li>Problem definitions and settings</li>
+                        <li>Key challenges</li>
+                        <li>Related problems</li>
+                    </ul>
+                </li>
+                <li>Part I: Group Fairness on Graphs
+                    <ul>
+                        <li>Fair graph ranking</li>
+                        <li>Fair graph clustering</li>
+                        <li>Fair graph embedding</li>
+                    </ul>
+                </li>
+                <li>Part II: Individual Fairness on Graphs
+                    <ul>
+                        <li>Optimization-based method</li>
+                        <li>Ranking-based method</li>
+                    </ul>
+                </li>
+                <li>Part III: Other Fairness Definitions on Graphs
+                    <ul>
+                        <li>Rawlsian fairness</li>
+                        <li>Degree-related fairness</li>
+                        <li>Counterfactual fairness</li>
+                    </ul>
+                </li>
+                <li>Part IV: Open Challenges and Future Directions
+                    <ul>
+                        <li>Fairness on dynamic graphs</li>
+                        <li>Fairness on multi-network mining</li>
+                        <li>Multi-resolution fairness on graphs</li>
+                        <li>Connections between group fairness and individual fairness on graphs</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
 
-<!-- Speaker Bio -->
-<p class="h3">Speaker's Bio</p>
-<br>
-<div class="row my-6">
-<div class="col-lg-2">
-    <img alt="" class="img-fluid rounded img-responsive" src="img/jian.png" style="width:100%" />
-</div>
+        <!-- Speaker Bio -->
+        <p class="h3">Speaker's Bio</p>
+        <br>
+        <div class="row my-6">
+            <div class="col-lg-2">
+                <img alt="" class="img-fluid rounded img-responsive" src="img/jian.png" style="width:100%" />
+            </div>
 
-<div class="col-lg-10">
-<p class="m-0"><strong>Jian Kang</strong> is currently a Ph.D. student in the Department of Computer Science at the University of Illinois at Urbana-Champaign. Prior to that, he was a Ph.D. student in the School of Computing, Informatics, and Decision Systems Engineering at Arizona State University. He received his M.CS. degree in Computer Science from the University of Virginia in 2016 and B.Eng. degree in Telecommunication Engineering from Beijing University of Posts and Telecommunications in 2014. His current research interests lie in large-scale data mining and machine learning, especially on graphs, with a focus on their algorithmic fairness. His research works on related topics have been published at several major conferences and journals in data mining and machine learning. He has also served as a reviewer and a program committee member in top-tier data mining and artificial intelligence venues and journals (e.g., NeurIPS, ICML, ICLR, CIKM, WSDM, JMLR, TKDE, etc). For more information, please refer to his personal website at <a href="http://jiank2.web.illinois.edu" target="_blank">http://jiank2.web.illinois.edu</a>.</p>
-</div>
-</div>
+            <div class="col-lg-10">
+                <p class="m-0"><strong>Jian Kang</strong> is currently a Ph.D. student in the Department of Computer
+                    Science at the University of Illinois at Urbana-Champaign. Prior to that, he was a Ph.D. student in
+                    the School of Computing, Informatics, and Decision Systems Engineering at Arizona State University.
+                    He received his M.CS. degree in Computer Science from the University of Virginia in 2016 and B.Eng.
+                    degree in Telecommunication Engineering from Beijing University of Posts and Telecommunications in
+                    2014. His current research interests lie in large-scale data mining and machine learning, especially
+                    on graphs, with a focus on their algorithmic fairness. His research works on related topics have
+                    been published at several major conferences and journals in data mining and machine learning. He has
+                    also served as a reviewer and a program committee member in top-tier data mining and artificial
+                    intelligence venues and journals (e.g., NeurIPS, ICML, ICLR, CIKM, WSDM, JMLR, TKDE, etc). For more
+                    information, please refer to his personal website at <a href="http://jiank2.web.illinois.edu"
+                        target="_blank" style="color:#1f52b0">http://jiank2.web.illinois.edu</a>.</p>
+            </div>
+        </div>
 
-<br><br>
+        <br><br>
 
-<div class="row my-6">
-<div class="col-lg-2">
-    <img alt="" class="img-fluid rounded img-responsive" src="img/hh.png" style="width:100%" />
-</div>
-<div class="col-lg-10">
-<p class="m-0"><strong>Hanghang Tong</strong> is currently an associate professor at Department of Computer Science at University of Illinois at Urbana-Champaign. Before that he was an associate professor at School of Computing, Informatics, and Decision Systems Engineering (CIDSE), Arizona State University. He received his M.Sc. and Ph.D. degrees from Carnegie Mellon University in 2008 and 2009, both in Machine Learning. His research interest is in large scale data mining for graphs and multimedia. He has received several awards, including SDM/IBM Early Career Data Mining Research award (2018), NSF CAREER award (2017), ICDM 10-Year Highest Impact Paper award (2015), four best paper awards (TUP'14, CIKM'12, SDM'08, ICDM'06), seven 'bests of conference', 1 best demo, honorable mention (SIGMOD'17), and 1 best demo candidate, second place (CIKM'17). He has published over 200 refereed articles. He is the Editor-in-Chief of SIGKDD Explorations (ACM), %an action editor of Data Mining and Knowledge Discovery (Springer), 
-and an associate editor of Knowledge and Information Systems (Springer) and Computing Surveys (ACM); and has served as a program committee member in multiple data mining, database and artificial intelligence venues (e.g., SIGKDD, CIKM, SIGMOD, AAAI, WWW, etc.). He has given several tutorials at top-tier conferences, such as IEEE Big Data 2015, SDM 2016, WSDM 2018, KDD 2018, CIKM 2020, etc. For more information, please refere to his personal website at <a href="http://tonghanghang.org" target="_blank">http://tonghanghang.org</a>.</p>
-</div>
-</div>
+        <div class="row my-6">
+            <div class="col-lg-2">
+                <img alt="" class="img-fluid rounded img-responsive" src="img/hh.png" style="width:100%" />
+            </div>
+            <div class="col-lg-10">
+                <p class="m-0"><strong>Hanghang Tong</strong> is currently an associate professor at Department of
+                    Computer Science at University of Illinois at Urbana-Champaign. Before that he was an associate
+                    professor at School of Computing, Informatics, and Decision Systems Engineering (CIDSE), Arizona
+                    State University. He received his M.Sc. and Ph.D. degrees from Carnegie Mellon University in 2008
+                    and 2009, both in Machine Learning. His research interest is in large scale data mining for graphs
+                    and multimedia. He has received several awards, including SDM/IBM Early Career Data Mining Research
+                    award (2018), NSF CAREER award (2017), ICDM 10-Year Highest Impact Paper award (2015), four best
+                    paper awards (TUP'14, CIKM'12, SDM'08, ICDM'06), seven 'bests of conference', 1 best demo, honorable
+                    mention (SIGMOD'17), and 1 best demo candidate, second place (CIKM'17). He has published over 200
+                    refereed articles. He is the Editor-in-Chief of SIGKDD Explorations (ACM), %an action editor of Data
+                    Mining and Knowledge Discovery (Springer),
+                    and an associate editor of Knowledge and Information Systems (Springer) and Computing Surveys (ACM);
+                    and has served as a program committee member in multiple data mining, database and artificial
+                    intelligence venues (e.g., SIGKDD, CIKM, SIGMOD, AAAI, WWW, etc.). He has given several tutorials at
+                    top-tier conferences, such as IEEE Big Data 2015, SDM 2016, WSDM 2018, KDD 2018, CIKM 2020, etc. For
+                    more information, please refere to his personal website at <a href="http://tonghanghang.org"
+                        target="_blank" style="color:#1f52b0">http://tonghanghang.org</a>.</p>
+            </div>
+        </div>
 
-<!-- References -->
-<div class="my-4 text-left">
-<p class="h3">References</p>
-<ul>
-	<li>Tsioutsiouliklis, S., Pitoura, E., Tsaparas, P., Kleftakis, I., & Mamoulis, N. (2021). Fairness-Aware PageRank. In Proceedings of the Web Conference 2021 (pp. 3815-3826).</li>
-	<li>Kleindessner, M., Samadi, S., Awasthi, P., & Morgenstern, J. (2019). Guarantees for Spectral Clustering with Fairness Constraints. In International Conference on Machine Learning (pp. 3458-3467).</li>
-	<li>Bose, A., & Hamilton, W. (2019). Compositional Fairness Constraints for Graph Embeddings. In International Conference on Machine Learning (pp. 715-724).</li>
-	<li>Rahman, T., Surma, B., Backes, M., & Zhang, Y. (2019). Fairwalk: Towards Fair Graph Embedding. In Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence (pp. 3289-3295).</li>
-	<li>Buyl, M., & De Bie, T. (2020, November). DeBayes: A Bayesian Method for Debiasing Network Embeddings. In International Conference on Machine Learning (pp. 1220-1229).</li>
-    <li>Kang, J., He, J., Maciejewski, R., & Tong, H. (2020). InFoRM: Individual Fairness on Graph Mining. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (pp. 379-389).</li>
-    <li>Dong, Y., Kang, J., Tong, H., & Li, J. (2021). Individual Fairness for Graph Neural Networks: A Ranking based Approach. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining (pp. 300-310).</li>
-    <li>Rahmattalabi, A., Vayanos, P., Fulginiti, A., Rice, E., Wilder, B., Yadav, A., & Tambe, M. (2019). Exploring Algorithmic Fairness in Robust Graph Covering Problems. In Advances in Neural Information Processing Systems, (pp. 15776-15787).</li>
-    <li>Tang, X., Yao, H., Sun, Y., Wang, Y., Tang, J., Aggarwal, C., ... & Wang, S. (2020). Investigating and Mitigating Degree-Related Biases in Graph Convolutional Networks. In Proceedings of the 29th ACM International Conference on Information & Knowledge Management (pp. 1435-1444).</li>
-    <li>Agarwal, C., Lakkaraju, H., & Zitnik, M. (2021). Towards a Unified Framework for Fair and Stable Graph Representation Learning. In Proceedings of the 37th Conference on Uncertainty in Artificial Intelligence.</li>
-</ul>
-</div>
+        <!-- References -->
+        <div class="my-4 text-left">
+            <p class="h3">References</p>
+            <ul>
+                <li>Tsioutsiouliklis, S., Pitoura, E., Tsaparas, P., Kleftakis, I., & Mamoulis, N. (2021).
+                    Fairness-Aware PageRank. In Proceedings of the Web Conference 2021 (pp. 3815-3826).</li>
+                <li>Kleindessner, M., Samadi, S., Awasthi, P., & Morgenstern, J. (2019). Guarantees for Spectral
+                    Clustering with Fairness Constraints. In International Conference on Machine Learning (pp.
+                    3458-3467).</li>
+                <li>Bose, A., & Hamilton, W. (2019). Compositional Fairness Constraints for Graph Embeddings. In
+                    International Conference on Machine Learning (pp. 715-724).</li>
+                <li>Rahman, T., Surma, B., Backes, M., & Zhang, Y. (2019). Fairwalk: Towards Fair Graph Embedding. In
+                    Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence (pp.
+                    3289-3295).</li>
+                <li>Buyl, M., & De Bie, T. (2020, November). DeBayes: A Bayesian Method for Debiasing Network
+                    Embeddings. In International Conference on Machine Learning (pp. 1220-1229).</li>
+                <li>Kang, J., He, J., Maciejewski, R., & Tong, H. (2020). InFoRM: Individual Fairness on Graph Mining.
+                    In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining
+                    (pp. 379-389).</li>
+                <li>Dong, Y., Kang, J., Tong, H., & Li, J. (2021). Individual Fairness for Graph Neural Networks: A
+                    Ranking based Approach. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery &
+                    Data Mining (pp. 300-310).</li>
+                <li>Rahmattalabi, A., Vayanos, P., Fulginiti, A., Rice, E., Wilder, B., Yadav, A., & Tambe, M. (2019).
+                    Exploring Algorithmic Fairness in Robust Graph Covering Problems. In Advances in Neural Information
+                    Processing Systems, (pp. 15776-15787).</li>
+                <li>Tang, X., Yao, H., Sun, Y., Wang, Y., Tang, J., Aggarwal, C., ... & Wang, S. (2020). Investigating
+                    and Mitigating Degree-Related Biases in Graph Convolutional Networks. In Proceedings of the 29th ACM
+                    International Conference on Information & Knowledge Management (pp. 1435-1444).</li>
+                <li>Agarwal, C., Lakkaraju, H., & Zitnik, M. (2021). Towards a Unified Framework for Fair and Stable
+                    Graph Representation Learning. In Proceedings of the 37th Conference on Uncertainty in Artificial
+                    Intelligence.</li>
+            </ul>
+        </div>
 
-</div>
+    </div>
 
-<br>
+    <br>
 
 </body>
+
 </html>
