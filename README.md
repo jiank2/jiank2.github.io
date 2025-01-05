@@ -1,60 +1,92 @@
-# [Start Bootstrap - Small Business](https://startbootstrap.com/template-overviews/small-business/)
+<h1><img src="https://img.fortawesome.com/349cfdf6/fa-free-logo.svg" alt="Font Awesome Free" width="50%"></h1>
 
-[Small Business](http://startbootstrap.com/template-overviews/small-business/) is a responsive marketing landing page template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+> Version 6
 
-## Preview
+Font Awesome is the Internet's icon library and toolkit, used by millions of
+designers, developers, and content creators.
 
-[![Small Business Preview](https://startbootstrap.com/assets/img/templates/small-business.jpg)](https://blackrockdigital.github.io/startbootstrap-small-business/)
+## Documentation
 
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-small-business/)**
+Learn how to get started with Font Awesome and then dive deeper into other advanced topics:
 
-## Status
+[Docs for version 6](https://fontawesome.com/docs)
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-small-business/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-small-business.svg)](https://www.npmjs.com/package/startbootstrap-small-business)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-small-business.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-small-business)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-small-business/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-small-business)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-small-business/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-small-business?type=dev)
+### Where did Font Awesome 5, 4 (or 3) go?
 
-## Download and Installation
+Now that Font Awesome 6 has been released we are marking version 5 as Long Term
+Support (LTS). Version 5 will get critical bug fixes only. Version 3 and 4 are
+now end-of-life and we don't plan on releasing any further versions of the 4.x
+or 3.x.
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/small-business/)
-* Install via npm: `npm i startbootstrap-small-business`
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-small-business.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-small-business)
+You can see a complete list of versions on [our Versions
+page](https://fontawesome.com/versions).
 
-## Usage
+## Change log
 
-### Basic Usage
+The change log for releases is now [available directly on our site](https://fontawesome.com/docs/changelog/).
 
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+Looking for older versions of Font Awesome? Check the [releases](https://github.com/FortAwesome/Font-Awesome/releases).
 
-### Advanced Usage
+## Upgrading
 
-After installation, run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
+From time-to-time we'll have special upgrading instructions from one version to the next.
 
-You must have npm and Gulp installed globally on your machine in order to use these features.
+- [Web upgrading guide](https://fontawesome.com/docs/web/setup/upgrade/)
+- [Desktop upgrading guide](https://fontawesome.com/docs/desktop/setup/upgrade/)
 
-## Bugs and Issues
+## Code of conduct
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-small-business/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/small-business/).
+We will behave ourselves if you behave yourselves. For more details see our
+[CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md).
 
-## About
+## Contributing
 
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
+Please read through our [contributing guidelines](./CONTRIBUTING.md).  Included
+are directions for opening issues.
 
-* https://startbootstrap.com
-* https://twitter.com/SBootstrap
+## Versioning
 
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
+Font Awesome will be maintained under the Semantic Versioning guidelines as much as possible. Releases will be numbered
+with the following format:
 
-* http://davidmiller.io
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+`<major>.<minor>.<patch>`
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+For more information on SemVer, please visit https://semver.org.
 
-## Copyright and License
+**The major version "6" is part of an umbrella release.  It includes many different types of files and technologies. Therefore
+we deviate from normal SemVer in the following ways:**
 
-Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-small-business/blob/gh-pages/LICENSE) license.
+* Any release may update the design, look-and-feel, or branding of an existing
+  icon
+* We will never intentionally release a `patch` version update that breaks
+  backward compatibility
+* A `minor` release **may include backward-incompatible changes** but we will
+  write clear upgrading instructions in UPGRADING.md
+* A `minor` or `patch` release will never remove icons
+* Bug fixes will be addressed as `patch` releases unless they include backward
+  incompatibility then they will be `minor` releases
+
+## License
+
+Font Awesome Free is free, open source, and GPL friendly. You can use it for
+commercial projects, open source projects, or really almost whatever you want.
+
+- Icons — CC BY 4.0 License
+  - In the Font Awesome Free download, the CC BY 4.0 license applies to all icons packaged as .svg and .js files types.
+- Fonts — SIL OFL 1.1 License
+  - In the Font Awesome Free download, the SIL OLF license applies to all icons packaged as web and desktop font files.
+- Code — MIT License
+  - In the Font Awesome Free download, the MIT license applies to all non-font and non-icon files.
+
+Attribution is required by MIT, SIL OLF, and CC BY licenses. Downloaded Font
+Awesome Free files already contain embedded comments with sufficient
+attribution, so you shouldn't need to do anything additional when using these
+files normally.
+
+We've kept attribution comments terse, so we ask that you do not actively work
+to remove them from files, especially code. They're a great way for folks to
+learn about Font Awesome.
+
+## Team
+
+https://github.com/orgs/FortAwesome/people
