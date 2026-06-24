@@ -19,34 +19,136 @@
             margin-bottom: 0
         }
 
-        .member-image {
-            width: 180px;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-bottom: 1rem;
+        .lab-intro {
+            font-size: 1.05rem;
+            line-height: 1.7;
         }
 
-        .member-name {
-            margin-bottom: 0.25rem;
-            font-size: 1.3rem;
-        }
-
-        .member-title {
-            color: #2c3e50;
-            font-size: 1rem;
-        }
-
-        .member-interest {
-            color: #8a8a8a;
-            margin-bottom: 0.25rem;
-            font-size: 1rem;
+        .section-kicker {
+            color: #037FFB;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            margin-bottom: 0.35rem;
+            text-transform: uppercase;
         }
 
         .member-grid {
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 260px));
+            justify-content: start;
+            gap: 1.25rem;
+        }
+
+        .pi-grid {
+            grid-template-columns: minmax(240px, 320px);
+        }
+
+        .member-card {
+            background: #ffffff;
+            border: 1px solid #e4e9f2;
+            border-radius: 8px;
+            box-shadow: 0 8px 22px rgba(31, 82, 176, 0.08);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 1rem;
+        }
+
+        .member-portrait {
+            align-items: center;
+            aspect-ratio: 1 / 1;
+            background: #eef6ff;
+            border: 1px solid #dce9f8;
+            border-radius: 8px;
+            color: #1f52b0;
+            display: flex;
+            font-size: 3rem;
+            font-weight: 700;
+            justify-content: center;
+            margin-bottom: 1rem;
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+        }
+
+        img.member-portrait {
+            display: block;
+        }
+
+        .member-initials {
+            line-height: 1;
+            text-transform: uppercase;
+        }
+
+        .member-initials:empty::before {
+            content: attr(data-initials);
+        }
+
+        .member-name {
+            margin-bottom: 0.25rem;
+            font-size: 1.2rem;
+            line-height: 1.3;
+        }
+
+        .member-title {
+            color: #2c3e50;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .member-period {
+            color: #8a8a8a;
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .member-interest {
+            color: #4d5b6a;
+            font-size: 0.95rem;
+            line-height: 1.55;
+            margin-bottom: 0.75rem;
+        }
+
+        .member-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem;
+            margin-top: auto;
+        }
+
+        .member-tag {
+            background: #f4f9ff;
+            border: 1px solid rgba(3, 127, 251, 0.18);
+            border-radius: 999px;
+            color: #1f52b0;
+            font-size: 0.78rem;
+            line-height: 1.3;
+            padding: 0.18rem 0.55rem;
+        }
+
+        .member-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.7rem;
+            margin-top: 0.9rem;
+        }
+
+        .member-link {
+            color: #8a8a8a;
+            font-size: 0.95rem;
+        }
+
+        .member-link:hover {
+            color: #1f52b0;
+            text-decoration: none;
+        }
+
+        @media (max-width: 575.98px) {
+            .member-grid,
+            .pi-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
     <meta name="google-site-verification" content="qEih9m0y-6X0QuisQYfHSxOvkW-o5Q3dfxuQ5Z4JtGA" />
@@ -80,32 +182,39 @@
     <!-- Page Content -->
 
     <div class="container"><!-- Heading Row -->
-        <div class="my-4 text-left">
+        <div class="my-4 text-left lab-intro">
             <!-- Lab -->
             <h1 class="section-title">KANG Lab</h1>
-            Welcome to the KANG lab (<u>K</u>nowledge Explor<u>A</u>tion and Ma<u>N</u>a<u>G</u>ement)! Our lab's
-            mission is to empower AI for personalization and social good with relational information.
+            <p>Welcome to the KANG lab (<u>K</u>nowledge Explor<u>A</u>tion and Ma<u>N</u>a<u>G</u>ement)! Our lab's
+                mission is to empower AI for personalization and social good with relational information.</p>
         </div>
 
         <div class="my-4 text-left">
             <!-- PI -->
+            <div class="section-kicker">People</div>
             <h2 class="section-title">Principal Investigator</h2>
-            <div class="member-grid">
-                <div class="text-center">
-                    <img src="img/jian-kang.jpg" class="member-image">
+            <div class="member-grid pi-grid">
+                <article class="member-card">
+                    <img src="img/jian-kang.jpg" alt="Jian Kang" class="member-portrait" data-initials="JK">
                     <h3 class="member-name"><a href="index.html" style="color:#1f52b0">Jian Kang</a></h3>
                     <div class="member-title">Principal Investigator</div>
-                    <p>
-                        <a href="/files/cv_jian.pdf" style="color: #8a8a8a;"><i
-                                class="fa-regular fa-file fa-2x"></i></a>
-                        <a href="https://scholar.google.com/citations?user=U_jFlOQAAAAJ&hl=en"
-                            style="color: #8a8a8a;"><i class="fa-brands fa-google-scholar fa-2x"></i></a>
-                        <a href="https://www.linkedin.com/in/jiank2/" style="color: #8a8a8a;"><i
-                                class="fa-brands fa-linkedin-in fa-2x"></i></a>
-                        <a href="https://twitter.com/jiank_uiuc" style="color: #8a8a8a;"><i
-                                class="fa-brands fa-x-twitter fa-2x"></i></a>
-                    </p>
-                </div>
+                    <div class="member-tags" aria-label="Research topics">
+                        <span class="member-tag">Personalization</span>
+                        <span class="member-tag">Graph Mining</span>
+                        <span class="member-tag">Social Good</span>
+                        <span class="member-tag">Agent</span>
+                    </div>
+                    <div class="member-links" aria-label="Jian Kang links">
+                        <a href="/files/cv_jian.pdf" class="member-link" aria-label="CV"><i
+                                class="fa-regular fa-file fa-lg"></i></a>
+                        <a href="https://scholar.google.com/citations?user=U_jFlOQAAAAJ&hl=en" class="member-link"
+                            aria-label="Google Scholar"><i class="fa-brands fa-google-scholar fa-lg"></i></a>
+                        <a href="https://www.linkedin.com/in/jiank2/" class="member-link" aria-label="LinkedIn"><i
+                                class="fa-brands fa-linkedin-in fa-lg"></i></a>
+                        <a href="https://twitter.com/jiank_uiuc" class="member-link" aria-label="X"><i
+                                class="fa-brands fa-x-twitter fa-lg"></i></a>
+                    </div>
+                </article>
             </div>
         </div>
 
@@ -113,25 +222,141 @@
             <!-- Ph.D. Students -->
             <h2 class="section-title">Ph.D. Students</h2>
             <div class="member-grid">
-                <div class="text-center">
-                    <img src="img/rebecca-salganik.jpg" class="member-image">
-                    <h3 class="member-name"><a href="https://www.rebeccasalganik.com/" target="_blank"
-                            style="color:#1f52b0">Rebecca
-                            Salganik</a></h3>
-                    <div class="member-title">Ph.D. Students</div>
-                    <div class="member-title">(2024.08 - Now)</div>
-                    <div class="member-interest">Music IR<br>Fairness in AI</div>
-                </div>
-
-                <div class="text-center">
-                    <img src="img/huanxin-sheng.jpg" class="member-image">
-                    <h3 class="member-name"><a href="https://brucesheng1202.github.io/" target="_blank"
+                <article class="member-card">
+                    <img src="img/huanxin-sheng.jpg" alt="Huanxin Sheng" class="member-portrait" data-initials="HS">
+                    <h3 class="member-name"><a href="https://brucesheng1202.github.io/" target="_blank" rel="noopener noreferrer"
                             style="color:#1f52b0">Huanxin
                             Sheng</a></h3>
-                    <div class="member-title">Ph.D. Students</div>
-                    <div class="member-title">(2024.08 - Now)</div>
-                    <div class="member-interest">Uncertainty Quantification<br>Spatio-temporal Learning</div>
-                </div>
+                    <div class="member-title">Ph.D. Student, MBZUAI</div>
+                    <div class="member-title">Statistics and Data Science</div>
+                    <div class="member-period">Since 2026.08</div>
+                    <div class="member-tags" aria-label="Research topics">
+                        <span class="member-tag">Model Evaluation</span>
+                    </div>
+                </article>
+                <article class="member-card">
+                    <div class="member-portrait member-initials" data-initials="HX"></div>
+                    <h3 class="member-name"><a href="#" target="_blank" rel="noopener noreferrer"
+                            style="color:#1f52b0">Huajun Xi</a></h3>
+                    <div class="member-title">Ph.D. Student, MBZUAI</div>
+                    <div class="member-title">Statistics and Data Science</div>
+                    <div class="member-period">Since 2026.08</div>
+                    <div class="member-tags" aria-label="Research topics">
+                        <span class="member-tag">Agent</span>
+                    </div>
+                </article>
+                <article class="member-card">
+                    <div class="member-portrait member-initials" data-initials="RM"></div>
+                    <h3 class="member-name"><a href="#" target="_blank" rel="noopener noreferrer"
+                            style="color:#1f52b0">Roman Makarov</a></h3>
+                    <div class="member-title">Ph.D. Student, MBZUAI</div>
+                    <div class="member-title">Computer Science</div>
+                    <div class="member-period">Since 2026.08</div>
+                    <div class="member-tags" aria-label="Research topics">
+                        <span class="member-tag">Uncertainty</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="my-4 text-left">
+            <!-- M.S. Students -->
+            <h2 class="section-title">M.S. Students</h2>
+            <div class="member-grid">
+                <article class="member-card">
+                    <img src="img/leo-raphael-rodrigues.jpg" alt="Leo Raphael Rodrigues" class="member-portrait" data-initials="LR">
+                    <h3 class="member-name"><a href="#" target="_blank" rel="noopener noreferrer"
+                            style="color:#1f52b0">Leo Raphael Rodrigues</a></h3>
+                    <div class="member-title">M.S. Student, MBZUAI</div>
+                    <div class="member-title">Computer Science</div>
+                    <div class="member-period">Since 2025.08</div>
+                    <div class="member-tags" aria-label="Research topics">
+                        <span class="member-tag">Mechanistic Interpretability</span>
+                    </div>
+                </article>
+
+                <article class="member-card">
+                    <img src="img/syed-arsalaan-nadim.jpg" alt="Syed Arsalaan Nadim" class="member-portrait" data-initials="SN">
+                    <h3 class="member-name"><a href="#" target="_blank" rel="noopener noreferrer"
+                            style="color:#1f52b0">Syed Arsalaan Nadim</a></h3>
+                    <div class="member-title">M.S. Student, MBZUAI</div>
+                    <div class="member-title">Statistics and Data Science</div>
+                    <div class="member-period">Co-advised with Raul Astudillo <br> Since 2025.08</div>
+                    <div class="member-tags" aria-label="Research topics">
+                        <span class="member-tag">AI for Science</span>
+                    </div>
+                </article>
+
+                <article class="member-card">
+                    <img src="img/marina-ananyan.jpg" alt="Marina Ananyan" class="member-portrait" data-initials="MA">
+                    <h3 class="member-name"><a href="#" target="_blank" rel="noopener noreferrer"
+                            style="color:#1f52b0">Marina Ananyan</a></h3>
+                    <div class="member-title">M.S. Student, MBZUAI</div>
+                    <div class="member-title">Statistics and Data Science</div>
+                    <div class="member-period">Co-advised with Souhaib Ben Taieb <br> Since 2025.08</div>
+                    <div class="member-tags" aria-label="Research topics">
+                        <span class="member-tag">Uncertainty Quantification</span>
+                    </div>
+                </article>
+
+                <article class="member-card">
+                    <img src="img/symbat-moldakhan.jpg" alt="Symbat Moldakhan" class="member-portrait" data-initials="SM">
+                    <h3 class="member-name"><a href="#" target="_blank" rel="noopener noreferrer"
+                            style="color:#1f52b0">Symbat Moldakhan</a></h3>
+                    <div class="member-title">M.S. Student, MBZUAI</div>
+                    <div class="member-title">Statistics and Data Science</div>
+                    <div class="member-period">Since 2026.07</div>
+                    <div class="member-tags" aria-label="Research topics">
+                        <span class="member-tag">Personalization</span>
+                    </div>
+                </article>
+
+                <article class="member-card">
+                    <img src="img/xinyue-bi.jpg" alt="Xinyue Bi" class="member-portrait" data-initials="XB">
+                    <h3 class="member-name"><a href="#" target="_blank" rel="noopener noreferrer"
+                            style="color:#1f52b0">Xinyue Bi</a></h3>
+                    <div class="member-title">M.S. Student, MBZUAI</div>
+                    <div class="member-title">Machine Learning</div>
+                    <div class="member-period">Co-advised with Zhiqiang Shen <br>Since 2026.07</div>
+                    <div class="member-tags" aria-label="Research topics">
+                        <span class="member-tag">Data Distillation</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="my-4 text-left">
+            <!-- Alumni -->
+            <h2 class="section-title">Alumni</h2>
+            <div class="member-grid">
+                <article class="member-card">
+                    <img src="img/huanxin-sheng.jpg" alt="Huanxin Sheng" class="member-portrait" data-initials="HS">
+                    <h3 class="member-name"><a href="https://brucesheng1202.github.io/" target="_blank" rel="noopener noreferrer" style="color:#1f52b0">Huanxin Sheng</a></h3>
+                    <div class="member-title">M.S., University of Rochester</div>
+                    <div class="member-interest">Next: Ph.D. student at MBZUAI since 2026.08</div>
+                    <div class="member-tags" aria-label="Research topics">
+                        <span class="member-tag">Conformal Prediction</span>
+                    </div>
+                    <div class="member-links" aria-label="Huanxin Sheng links">
+                        <a href="https://brucesheng1202.github.io/" target="_blank" rel="noopener noreferrer" class="member-link">Homepage</a>
+                    </div>
+                </article>
+
+                <article class="member-card">
+                    <img src="img/rebecca-salganik.jpg" alt="Rebecca Salganik" class="member-portrait" data-initials="RS">
+                    <h3 class="member-name"><a href="https://www.rebeccasalganik.com/" target="_blank" rel="noopener noreferrer"
+                            style="color:#1f52b0">Rebecca Salganik</a></h3>
+                    <div class="member-title">Ph.D. Student, University of Rochester</div>
+                    <div class="member-period">2024.08 - 2025.01</div>
+                    <div class="member-interest">Next: Ph.D. student at Mila since 2026.08</div>
+                    <div class="member-tags" aria-label="Research topics">
+                        <span class="member-tag">Algorithmic Fairness</span>
+                        <span class="member-tag">Personalization</span>
+                    </div>
+                    <div class="member-links" aria-label="Rebecca Salganik links">
+                        <a href="https://www.rebeccasalganik.com/" target="_blank" rel="noopener noreferrer" class="member-link">Homepage</a>
+                    </div>
+                </article>
             </div>
         </div>
     </div>
@@ -147,6 +372,49 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function getInitials(text) {
+            return (text || '')
+                .replace(/photo placeholder/ig, '')
+                .trim()
+                .split(/\s+/)
+                .filter(Boolean)
+                .slice(0, 2)
+                .map(function (word) { return word.charAt(0); })
+                .join('')
+                .toUpperCase();
+        }
+
+        function fillInitialsPlaceholder(el) {
+            var initials = el.getAttribute('data-initials') || el.textContent.trim() || getInitials(el.getAttribute('aria-label'));
+            if (!initials) {
+                return;
+            }
+            el.setAttribute('data-initials', initials);
+            el.textContent = initials;
+        }
+
+        function replaceImageWithInitials(img) {
+            var placeholder = document.createElement('div');
+            placeholder.className = 'member-portrait member-initials';
+            placeholder.setAttribute('aria-label', (img.alt || 'Member') + ' photo placeholder');
+            placeholder.setAttribute('data-initials', img.getAttribute('data-initials') || getInitials(img.alt));
+            fillInitialsPlaceholder(placeholder);
+            img.parentNode.replaceChild(placeholder, img);
+        }
+
+        document.querySelectorAll('.member-portrait.member-initials').forEach(fillInitialsPlaceholder);
+
+        document.querySelectorAll('img.member-portrait').forEach(function (img) {
+            if (!img.getAttribute('src')) {
+                replaceImageWithInitials(img);
+                return;
+            }
+            img.addEventListener('error', function () {
+                replaceImageWithInitials(img);
+            });
+        });
+    </script>
 </body>
 
 </html>
