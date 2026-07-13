@@ -17,6 +17,67 @@
             margin-top: 0;
             margin-bottom: 0
         }
+
+        .publication-year {
+            display: flex;
+            align-items: center;
+            margin-top: 1.75rem;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 1px solid #dee2e6;
+            color: #495057;
+            font-size: 1.25rem;
+        }
+
+        .publication-collapse-toggle {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            margin: -0.25rem 0 -0.25rem auto;
+            padding: 0;
+            border: 0;
+            border-radius: 50%;
+            background-color: transparent;
+            color: #6c757d;
+            font-size: 0.8rem;
+            line-height: 1;
+            cursor: pointer;
+            transition: color 0.15s ease, background-color 0.15s ease;
+        }
+
+        .publication-collapse-toggle i {
+            transition: transform 0.2s ease;
+        }
+
+        .publication-collapse-toggle:hover,
+        .publication-collapse-toggle:focus {
+            background-color: #e9f3ff;
+            color: #037FFB;
+            outline: none;
+        }
+
+        .publication-collapse-toggle:focus {
+            box-shadow: 0 0 0 0.2rem rgba(3, 127, 251, 0.25);
+        }
+
+        .publication-collapse-toggle.collapsed i {
+            transform: rotate(180deg);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .publication-collapse-toggle,
+            .publication-collapse-toggle i {
+                transition: none;
+            }
+        }
+
+        .section-heading {
+            margin-top: 2.25rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.25rem;
+        }
     </style>
     <meta name="google-site-verification" content="qEih9m0y-6X0QuisQYfHSxOvkW-o5Q3dfxuQ5Z4JtGA" />
 </head>
@@ -52,12 +113,19 @@
         <div class="my-4 text-left">
             <h2>Publications</h2>
             (* indicates equal contribution)
-            <p><strong>Preprints</strong></p>
-            <ul>
+            <section class="publication-timeline" aria-label="Publications by year">
+                <h3 class="publication-year">
+                    <span>2026</span>
+                    <button type="button" class="publication-collapse-toggle" data-toggle="collapse" data-target="#publications-2026" aria-expanded="true" aria-controls="publications-2026" aria-label="Toggle publications from 2026"><i class="fas fa-chevron-up" aria-hidden="true"></i></button>
+                </h3>
+                <div class="collapse show" id="publications-2026">
+                    <ul>
                 <li>
                     <p class="content"><a href="https://arxiv.org/abs/2604.10577" target="_blank"
-                            style="color:#1f52b0">ChronoID: Infusing Explicit Temporal Signals into Semantic IDs for Generative Recommendation</a></p>
-                    <p class="content">Dongdong Nian, Dongqi Fu, Chenliang Xu, Yinglong Xia, Hong Li, Hong Yan, Jian Kang</p>
+                            style="color:#1f52b0">ChronoID: Infusing Explicit Temporal Signals into Semantic IDs for
+                            Generative Recommendation</a></p>
+                    <p class="content">Dongdong Nian, Dongqi Fu, Chenliang Xu, Yinglong Xia, Hong Li, Hong Yan, Jian
+                        Kang</p>
                     <p>arXiv:2606.14260</p>
                 </li>
                 <li>
@@ -71,81 +139,6 @@
                     <p>[<a href="https://github.com/limenlp/OS_Blind" target="_blank" style="color:#1f52b0">Code</a>]
                         [<a href="https://huggingface.co/datasets/lime-nlp/OS-Blind" target="_blank"
                             style="color:#1f52b0">Dataset</a>]
-                    </p>
-                </li>
-                
-                <li>
-                    <p class="content"><a href="https://arxiv.org/abs/2512.18180" target="_blank"
-                            style="color:#1f52b0">FairExpand: Individual Fairness on Graphs with Partial Similarity
-                            Information</a></p>
-                    <p class="content">Rebecca Salganik, Yibin Wang, Guillaume Salha-Galvan, Jian Kang</p>
-                    <p>arXiv:2512.18180</p>
-                </li>
-                <li>
-                    <p class="content"><a href="https://arxiv.org/abs/2402.16387" target="_blank"
-                            style="color:#1f52b0">On the Generalization Capability of Temporal Graph Learning
-                            Algorithms: Theoretical Insights and a Simpler Method</a></p>
-                    <p class="content">Weilin Cong, Jian Kang, Hanghang Tong, Mehrdad Mahdavi</p>
-                    <p>arXiv:2402.16387</p>
-                </li>
-                <li>
-                    <p class="content"><a href="https://arxiv.org/abs/2111.12776" target="_blank"
-                            style="color:#1f52b0">IMBENS: Ensemble Class-imbalanced Learning in Python</a>
-                    </p>
-                    <p class="content">Zhining Liu, Jian Kang, Hanghang Tong, Yi Chang</p>
-                    <p class="content">arXiv:2111.12776</p>
-                    <p>[<a href="https://imbalanced-ensemble.readthedocs.io/en/latest/" target="_blank"
-                            style="color:#1f52b0">Webpage</a>] [<a
-                            href="https://github.com/ZhiningLiu1998/imbalanced-ensemble" target="_blank"
-                            style="color:#1f52b0">Package</a>]
-                    </p>
-                </li>
-            </ul>
-
-            <p><strong>Book Chapter</strong></p>
-            <ul>
-                <li>
-                    <p class="content"><a href="#" target="_blank" style="color:#1f52b0">Algorithmic Fairness in Graph
-                            Mining</a></p>
-                    <p class="content">Jian Kang</p>
-                    <p>Handbook of Combinatorial Optimization (3rd Edition)</p>
-                </li>
-            </ul>
-
-            <p><strong>Journal Papers</strong></p>
-            <ul>
-                <li>
-                    <p class="content"><a href="https://openreview.net/forum?id=T1NjRBI5xs" target="_blank"
-                            style="color:#1f52b0">Fair Online Influence Maximization</a></p>
-                    <p class="content">Xiangqi Wang, Shaokun Zhang, Jose Efraim Aguilar Escamilla, Qingyun Wu,
-                        Xiangliang Zhang, Jian Kang, Huazheng Wang</p>
-                    <p>TMLR, 2025</p>
-                </li>
-                <li>
-                    <p class="content"><a href="/files/papers/xie21fairrankvis.pdf" target="_blank"
-                            style="color:#1f52b0">FairRankVis: A Visual Analytics Framework for Exploring Algorithmic
-                            Fairness in Graph Mining Models</a></p>
-                    <p class="content">Tiankai Xie, Yuxin Ma, Jian Kang, Hanghang Tong, Ross
-                        Maciejewski</p>
-                    <p>TVCG, 2021</p>
-                </li>
-                <li>
-                    <p class="content"><a href="/files/papers/wang20aurora.pdf" target="_blank"
-                            style="color:#1f52b0">Graph Ranking Auditing: Problem Definitions and Fast Solutions</a></p>
-                    <p class="content">Meijia Wang, Jian Kang, Nan Cao, Yinglong Xia, Wei Fan, Hanghang
-                        Tong</p>
-                    <p>TKDE, 2020</p>
-                </li>
-            </ul>
-
-            <p><strong>Conference Papers</strong></p>
-            <ul>
-                <li>
-                    <p class="content"><a href="https://arxiv.org/abs/2603.10178" target="_blank"
-                            style="color:#1f52b0">AIALIB: A Threat Library for AI-Generated Code</a></p>
-                    <p class="content">Ali Aljaberi, Youcheng Sun, Jian Kang</p>
-                    <p class="content">ASE 2026</p>
-                    <p>[<a href="https://github.com/Aljaberi500/aialib" target="_blank" style="color:#1f52b0">Code</a>]
                     </p>
                 </li>
                 <li>
@@ -163,12 +156,44 @@
                     </p>
                 </li>
                 <li>
-                    <p class="content"><a href="https://openreview.net/forum?id=GYVAl99Hjf" target="_blank" style="color:#1f52b0">Regulating Algorithms Is Not
+                    <p class="content"><a href="https://openreview.net/forum?id=GYVAl99Hjf" target="_blank"
+                            style="color:#1f52b0">Regulating Algorithms Is Not
                             Enough. A Study of Content Discovery in Online Platforms</a></p>
                     <p class="content">Rebecca Salganik, Guillaume Salha-Galvan, Adelaida Afilipoaie, Gustavo Ferreira,
                         Valdy Wiratama, Anson Kahng, Jian Kang,
                         Heritiana Ranaivoson</p>
                     <p>ICML 2026</p>
+                </li>
+                <li>
+                    <p class="content"><a href="https://arxiv.org/abs/2603.10178" target="_blank"
+                            style="color:#1f52b0">AIALIB: A Threat
+                            Library for AI-Generated Code</a></p>
+                    <p class="content">Ali Aljaberi, Youcheng Sun, Jian Kang</p>
+                    <p class="content">ASE 2026</p>
+                    <p>[<a href="https://github.com/Aljaberi500/aialib" target="_blank" style="color:#1f52b0">Code</a>]
+                    </p>
+                </li>
+                    </ul>
+                </div>
+                <h3 class="publication-year">
+                    <span>2025</span>
+                    <button type="button" class="publication-collapse-toggle" data-toggle="collapse" data-target="#publications-2025" aria-expanded="true" aria-controls="publications-2025" aria-label="Toggle publications from 2025"><i class="fas fa-chevron-up" aria-hidden="true"></i></button>
+                </h3>
+                <div class="collapse show" id="publications-2025">
+                    <ul>
+                <li>
+                    <p class="content"><a href="https://arxiv.org/abs/2512.18180" target="_blank"
+                            style="color:#1f52b0">FairExpand: Individual Fairness on Graphs with Partial Similarity
+                            Information</a></p>
+                    <p class="content">Rebecca Salganik, Yibin Wang, Guillaume Salha-Galvan, Jian Kang</p>
+                    <p>arXiv:2512.18180</p>
+                </li>
+                <li>
+                    <p class="content"><a href="https://openreview.net/forum?id=T1NjRBI5xs" target="_blank"
+                            style="color:#1f52b0">Fair Online Influence Maximization</a></p>
+                    <p class="content">Xiangqi Wang, Shaokun Zhang, Jose Efraim Aguilar Escamilla, Qingyun Wu,
+                        Xiangliang Zhang, Jian Kang, Huazheng Wang</p>
+                    <p>TMLR, 2025</p>
                 </li>
                 <li>
                     <p class="content"><a href="https://arxiv.org/abs/2502.13095" target="_blank"
@@ -251,6 +276,31 @@
                             style="color:#1f52b0">Code</a>]</p>
                 </li>
                 <li>
+                    <p class="content"><a href="#" target="_blank" style="color:#1f52b0">MusicSem: A Dataset of Music
+                            Descriptions on Reddit Capturing Musical Semantics</a></p>
+                    <p class="content">Rebecca Salganik, Teng Tu, Fei-Yueh Chen, Xiaohao Liu, Kaifeng Lu, Ethan Luvisia,
+                        Zhiyao Duan, Guillaume Salha-Galvan, Anson Kahng, Yunshan Ma, Jian Kang</p>
+                    <p class="content">ISMIR 2025</p>
+                    <p> [<a href="https://music-sem-web.vercel.app/" target="_blank" style="color:#1f52b0">Webpage</a>]
+                        [<a href="https://huggingface.co/datasets/Rsalga/MusicSem/tree/main" target="_blank"
+                            style="color:#1f52b0">Benchmark</a>]</p>
+                </li>
+                    </ul>
+                </div>
+                <h3 class="publication-year">
+                    <span>2024</span>
+                    <button type="button" class="publication-collapse-toggle" data-toggle="collapse" data-target="#publications-2024" aria-expanded="true" aria-controls="publications-2024" aria-label="Toggle publications from 2024"><i class="fas fa-chevron-up" aria-hidden="true"></i></button>
+                </h3>
+                <div class="collapse show" id="publications-2024">
+                    <ul>
+                <li>
+                    <p class="content"><a href="https://arxiv.org/abs/2402.16387" target="_blank"
+                            style="color:#1f52b0">On the Generalization Capability of Temporal Graph Learning
+                            Algorithms: Theoretical Insights and a Simpler Method</a></p>
+                    <p class="content">Weilin Cong, Jian Kang, Hanghang Tong, Mehrdad Mahdavi</p>
+                    <p>arXiv:2402.16387</p>
+                </li>
+                <li>
                     <p class="content"><a href="https://openreview.net/forum?id=1mAaewThcz" target="_blank"
                             style="color:#1f52b0">Theoretical
                             and Empirical Insights into the Origins of Degree Bias in Graph Neural Networks</a></p>
@@ -309,6 +359,14 @@
                     <p class="content">ICLR 2024</p>
                     <p>[<a href="https://github.com/jiank2/FATE" target="_blank" style="color:#1f52b0">Code</a>]</p>
                 </li>
+                    </ul>
+                </div>
+                <h3 class="publication-year">
+                    <span>2023</span>
+                    <button type="button" class="publication-collapse-toggle" data-toggle="collapse" data-target="#publications-2023" aria-expanded="true" aria-controls="publications-2023" aria-label="Toggle publications from 2023"><i class="fas fa-chevron-up" aria-hidden="true"></i></button>
+                </h3>
+                <div class="collapse show" id="publications-2023">
+                    <ul>
                 <li>
                     <p class="content"><a href="https://openreview.net/forum?id=4RiLDrCbzW" target="_blank"
                             style="color:#1f52b0">BeMap: Balanced Message Passing for Fair Graph Neural Network</a></p>
@@ -334,6 +392,14 @@
                             style="color:#1f52b0">Talk (long version)</a>]
                     </p>
                 </li>
+                    </ul>
+                </div>
+                <h3 class="publication-year">
+                    <span>2022</span>
+                    <button type="button" class="publication-collapse-toggle" data-toggle="collapse" data-target="#publications-2022" aria-expanded="true" aria-controls="publications-2022" aria-label="Toggle publications from 2022"><i class="fas fa-chevron-up" aria-hidden="true"></i></button>
+                </h3>
+                <div class="collapse show" id="publications-2022">
+                    <ul>
                 <li>
                     <p class="content"><a href="/files/papers/kang22infofair.pdf" target="_blank"
                             style="color:#1f52b0">InfoFair: Information-Theoretic Intersectional Fairness</a></p>
@@ -379,6 +445,34 @@
                         [<a href="https://github.com/jiank2/RawlsGCN" target="_blank" style="color:#1f52b0">Code</a>]
                     </p>
                 </li>
+                    </ul>
+                </div>
+                <h3 class="publication-year">
+                    <span>2021</span>
+                    <button type="button" class="publication-collapse-toggle" data-toggle="collapse" data-target="#publications-2021" aria-expanded="true" aria-controls="publications-2021" aria-label="Toggle publications from 2021"><i class="fas fa-chevron-up" aria-hidden="true"></i></button>
+                </h3>
+                <div class="collapse show" id="publications-2021">
+                    <ul>
+                <li>
+                    <p class="content"><a href="https://arxiv.org/abs/2111.12776" target="_blank"
+                            style="color:#1f52b0">IMBENS: Ensemble Class-imbalanced Learning in Python</a>
+                    </p>
+                    <p class="content">Zhining Liu, Jian Kang, Hanghang Tong, Yi Chang</p>
+                    <p class="content">arXiv:2111.12776</p>
+                    <p>[<a href="https://imbalanced-ensemble.readthedocs.io/en/latest/" target="_blank"
+                            style="color:#1f52b0">Webpage</a>] [<a
+                            href="https://github.com/ZhiningLiu1998/imbalanced-ensemble" target="_blank"
+                            style="color:#1f52b0">Package</a>]
+                    </p>
+                </li>
+                <li>
+                    <p class="content"><a href="/files/papers/xie21fairrankvis.pdf" target="_blank"
+                            style="color:#1f52b0">FairRankVis: A Visual Analytics Framework for Exploring Algorithmic
+                            Fairness in Graph Mining Models</a></p>
+                    <p class="content">Tiankai Xie, Yuxin Ma, Jian Kang, Hanghang Tong, Ross
+                        Maciejewski</p>
+                    <p>TVCG, 2021</p>
+                </li>
                 <li>
                     <p class="content"><a href="/files/papers/dong21redress.pdf" target="_blank"
                             style="color:#1f52b0">Individual Fairness for Graph Neural Networks: A Ranking based
@@ -387,6 +481,21 @@
                     <p class="content">KDD 2021</p>
                     <p>[<a href="https://github.com/yushundong/REDRESS" target="_blank" style="color:#1f52b0">Code</a>]
                     </p>
+                </li>
+                    </ul>
+                </div>
+                <h3 class="publication-year">
+                    <span>2020</span>
+                    <button type="button" class="publication-collapse-toggle" data-toggle="collapse" data-target="#publications-2020" aria-expanded="true" aria-controls="publications-2020" aria-label="Toggle publications from 2020"><i class="fas fa-chevron-up" aria-hidden="true"></i></button>
+                </h3>
+                <div class="collapse show" id="publications-2020">
+                    <ul>
+                <li>
+                    <p class="content"><a href="/files/papers/wang20aurora.pdf" target="_blank"
+                            style="color:#1f52b0">Graph Ranking Auditing: Problem Definitions and Fast Solutions</a></p>
+                    <p class="content">Meijia Wang, Jian Kang, Nan Cao, Yinglong Xia, Wei Fan, Hanghang
+                        Tong</p>
+                    <p>TKDE, 2020</p>
                 </li>
                 <li>
                     <p class="content"><a href="/files/papers/kang20inform.pdf" target="_blank"
@@ -399,6 +508,14 @@
                         [<a href="https://github.com/jiank2/inform" target="_blank" style="color:#1f52b0">Code</a>]
                     </p>
                 </li>
+                    </ul>
+                </div>
+                <h3 class="publication-year">
+                    <span>2019</span>
+                    <button type="button" class="publication-collapse-toggle" data-toggle="collapse" data-target="#publications-2019" aria-expanded="true" aria-controls="publications-2019" aria-label="Toggle publications from 2019"><i class="fas fa-chevron-up" aria-hidden="true"></i></button>
+                </h3>
+                <div class="collapse show" id="publications-2019">
+                    <ul>
                 <li>
                     <p class="content"><a href="/files/papers/kang19n2n.pdf" target="_blank" style="color:#1f52b0">N2N:
                             Network Derivative Mining</a></p>
@@ -409,6 +526,14 @@
                         [<a href="/files/code/n2n.zip" target="_blank" style="color:#1f52b0">Code</a>]
                     </p>
                 </li>
+                    </ul>
+                </div>
+                <h3 class="publication-year">
+                    <span>2018</span>
+                    <button type="button" class="publication-collapse-toggle" data-toggle="collapse" data-target="#publications-2018" aria-expanded="true" aria-controls="publications-2018" aria-label="Toggle publications from 2018"><i class="fas fa-chevron-up" aria-hidden="true"></i></button>
+                </h3>
+                <div class="collapse show" id="publications-2018">
+                    <ul>
                 <li>
                     <p class="content"><a href="/files/papers/kang18xrank.pdf" target="_blank"
                             style="color:#1f52b0">X-Rank: Explainable Ranking in Complex Multi-layered Networks</a></p>
@@ -433,21 +558,21 @@
                     <p class="content">Haichao Yu, Jian Kang, Yinglong Xia, Nan Cao, Hanghang Tong</p>
                     <p>ChinaVis 2018</p>
                 </li>
-            </ul>
+                    </ul>
+                </div>
+            </section>
 
-            <p><strong>Demo</strong></p>
-            <ul>
+            <section class="book-chapter" aria-labelledby="book-chapter-heading">
+                <h3 id="book-chapter-heading" class="section-heading">Book Chapter</h3>
+                <ul>
                 <li>
-                    <p class="content"><a href="#" target="_blank" style="color:#1f52b0">MusicSem: A Dataset of Music
-                            Descriptions on Reddit Capturing Musical Semantics</a></p>
-                    <p class="content">Rebecca Salganik, Teng Tu, Fei-Yueh Chen, Xiaohao Liu, Kaifeng Lu, Ethan Luvisia,
-                        Zhiyao Duan, Guillaume Salha-Galvan, Anson Kahng, Yunshan Ma, Jian Kang</p>
-                    <p class="content">ISMIR 2025</p>
-                    <p> [<a href="https://music-sem-web.vercel.app/" target="_blank" style="color:#1f52b0">Webpage</a>]
-                        [<a href="https://huggingface.co/datasets/Rsalga/MusicSem/tree/main" target="_blank"
-                            style="color:#1f52b0">Benchmark</a>]</p>
+                    <p class="content"><a href="#" target="_blank" style="color:#1f52b0">Algorithmic Fairness in Graph
+                            Mining</a></p>
+                    <p class="content">Jian Kang</p>
+                    <p>Handbook of Combinatorial Optimization (3rd Edition)</p>
                 </li>
-            </ul>
+                </ul>
+            </section>
         </div>
 
         <!-- Content Row --><!-- /.row -->
