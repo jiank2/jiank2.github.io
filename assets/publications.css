@@ -1,0 +1,31 @@
+/* Continuous bibliography, with matching book-chapter and paper sections. */
+.publications-header { padding-bottom: 0; margin-bottom: 34px; border-bottom: 0; }
+.publication-contribution-note { margin: 10px 0 0; color: #37424c; font-size: var(--small-text-size); }
+.publication-list { margin: 0; padding: 0; list-style: none; }
+.publication-row { min-width: 0; padding: 20px 0 22px; border-bottom: 1px solid #c9d3de; background: #fff; }
+.publication-row:first-child { padding-top: 0; }
+.publication-row:last-child { padding-bottom: 0; border-bottom: 0; }
+.publication-title { margin: 0 0 8px; color: #0055b8; font-family: Arial, sans-serif; font-size: 18px; font-weight: 700; line-height: 1.45; letter-spacing: 0; }
+.publication-title a { color: inherit; text-decoration: none; }
+.publication-title a:hover { text-decoration: underline; text-decoration-thickness: 1px; }
+.publication-authors { margin: 0 0 10px; color: #202124; font-size: var(--text-size); line-height: 1.55; }
+.publication-details { color: #303b45; font-size: var(--text-size); line-height: 1.6; }
+.publication-detail { margin: 5px 0 0; }
+.publication-venue { margin: 0 0 2px; }
+.publication-details strong { color: #12385b; font-weight: 700; }
+.publication-detail a { color: #0055b8; text-decoration: underline; text-underline-offset: 2px; }
+.publication-resources { margin: 9px 0 -4px; font-size: 0; line-height: 1.5; }
+.publication-resources a { display: inline-block; margin: 0 7px 4px 0; padding: 2px 8px; border: 1px solid #a6b8ca; border-radius: 3px; background: #fff; color: #0055b8; font-size: var(--small-text-size); font-weight: 600; line-height: 1.6; text-decoration: none; }
+.publication-resources a:hover { background: #edf5ff; text-decoration: underline; }
+.publication-resources em { display: inline; color: #37424c; font-size: var(--small-text-size); line-height: 1.6; }
+.book-chapter-panel, .papers-section { margin: 0; }
+.book-chapter-panel + .papers-section { margin-top: 42px; }
+.book-chapter-panel > h2, .papers-section > h2 { display: flex; align-items: center; gap: 9px; margin: 0 0 18px; color: #12385b; font-size: var(--section-title-size); }
+.book-chapter-panel > h2::after, .papers-section > h2::after { content: ""; flex: 1; height: 1px; margin-left: 7px; background: #e0e5eb; }
+.publication-row a:focus-visible { outline: 2px solid #0055b8; outline-offset: 3px; }
+@media (max-width: 600px) {
+  .publications-header { margin-bottom: 28px; }
+  .publication-row { padding: 17px 0 19px; }
+  .publication-title { font-size: 18px; }
+  .book-chapter-panel + .papers-section { margin-top: 34px; }
+}

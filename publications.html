@@ -1,703 +1,637 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
-<head>
-    <meta charset="gbk">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Jian Kang</title>
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" /><!-- Custom styles for this template -->
-    <link href="css/small-business.css" rel="stylesheet" />
-    <link href="css/all.css" rel="stylesheet" />
-    <link href="css/academicons.css" rel="stylesheet" />
-    <style type="text/css">
-        .content {
-            margin-top: 0;
-            margin-bottom: 0
-        }
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+      content="Publications by Jian Kang and collaborators, with papers, code, datasets, and presentation resources.">
+    <meta name="theme-color" content="#12385b">
+    <title>Publications | Jian Kang</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=k-unboxed-dark-1">
+    <link rel="stylesheet" href="assets/site.css?v=4.16">
+    <link rel="stylesheet" href="assets/publications.css?v=4.13">
+    <script src="assets/site.js" defer></script>
+  </head>
 
-        .publication-year {
-            display: flex;
-            align-items: center;
-            margin-top: 1.75rem;
-            margin-bottom: 0.75rem;
-            padding-bottom: 0.4rem;
-            border-bottom: 1px solid #dee2e6;
-            color: #495057;
-            font-size: 1.25rem;
-        }
-
-        .publication-collapse-toggle {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 2rem;
-            height: 2rem;
-            margin: -0.25rem 0 -0.25rem auto;
-            padding: 0;
-            border: 0;
-            border-radius: 50%;
-            background-color: transparent;
-            color: #6c757d;
-            font-size: 0.8rem;
-            line-height: 1;
-            cursor: pointer;
-            transition: color 0.15s ease, background-color 0.15s ease;
-        }
-
-        .publication-collapse-toggle i {
-            transition: transform 0.2s ease;
-        }
-
-        .publication-collapse-toggle:hover,
-        .publication-collapse-toggle:focus {
-            background-color: #e9f3ff;
-            color: #037FFB;
-            outline: none;
-        }
-
-        .publication-collapse-toggle:focus {
-            box-shadow: 0 0 0 0.2rem rgba(3, 127, 251, 0.25);
-        }
-
-        .publication-collapse-toggle.collapsed i {
-            transform: rotate(180deg);
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-
-            .publication-collapse-toggle,
-            .publication-collapse-toggle i {
-                transition: none;
-            }
-        }
-
-        .section-heading {
-            margin-top: 2.25rem;
-            margin-bottom: 0.75rem;
-            font-size: 1.25rem;
-        }
-    </style>
-    <meta name="google-site-verification" content="qEih9m0y-6X0QuisQYfHSxOvkW-o5Q3dfxuQ5Z4JtGA" />
-</head>
-
-<body><!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #037FFB;">
-        <div class="container">
-            <strong><a class="text-white navbar-brand" href="index.html">
-                    Jian Kang
-                </a></strong>
-            <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
-                class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse" type="button">
-                <span class="navbar-toggler-icon my-toggler"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="text-white nav-link" href="lab.html">Lab</a></li>
-                    <li class="nav-item"><a class="text-white nav-link" href="publications.html">Publications</a></li>
-                    <li class="nav-item"><a class="text-white nav-link" href="talks.html">Talks</a></li>
-                    <li class="nav-item"><a class="text-white nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="text-white nav-link" href="teaching.html">Teaching</a></li>
-                    <li class="nav-item"><a class="text-white nav-link"
-                            href="mailto:jian.kang@rochester.edu">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Page Content -->
-
-    <div class="container"><!-- Heading Row -->
-
-        <div class="my-4 text-left">
-            <h2>Publications</h2>
-            (* indicates equal contribution)
-            <section class="publication-timeline" aria-label="Publications by year">
-                <section class="book-chapter" aria-labelledby="book-chapter-heading">
-                    <h3 id="book-chapter-heading" class="section-heading">Book Chapter</h3>
-                    <ul>
-                        <li>
-                            <p class="content"><a href="#" target="_blank" style="color:#1f52b0">Algorithmic Fairness in
-                                    Graph Mining</a></p>
-                            <p class="content">Jian Kang</p>
-                            <p>Handbook of Combinatorial Optimization (3rd Edition)</p>
-                        </li>
-                    </ul>
-                </section>
-                <!-- <h3 class="publication-year">
-                    <span>2026</span>
-                    <button type="button" class="publication-collapse-toggle" data-toggle="collapse"
-                        data-target="#publications-2026" aria-expanded="true" aria-controls="publications-2026"
-                        aria-label="Toggle publications from 2026"><i class="fas fa-chevron-up"
-                            aria-hidden="true"></i></button>
-                </h3> -->
-                <h3 id="book-chapter-heading" class="section-heading">Papers</h3>
-                <div class="collapse show" id="publications-2026">
-                    <ul>
-                        <li>
-                            <p class="content"><a href="https://arxiv.org/abs/2609.24432" target="_blank"
-                                    style="color:#1f52b0">1% of Tokens Can Be Enough: On Gradient Estimation in
-                                    On-Policy Distillation</a></p>
-                            <p class="content">Huanxin Sheng, Zhiling Ye, Haonan Wang, Jian Wang, Jinjie Gu, Jian Kang
-                            </p>
-                            <p>arXiv:2609.24432</p>
-                        </li>
-                        <li>
-                            <p class="content"><a href="https://arxiv.org/abs/2606.14260" target="_blank"
-                                    style="color:#1f52b0">ChronoID: Infusing Explicit Temporal Signals into Semantic IDs
-                                    for Generative Recommendation</a></p>
-                            <p class="content">Dongdong Nian, Dongqi Fu, Chenliang Xu, Yinglong Xia, Hong Li, Hong Yan,
-                                Jian Kang</p>
-                            <p>arXiv:2606.14260</p>
-                        </li>
-                        <li>
-                            <p class="content"><a href="https://arxiv.org/abs/2606.08921" target="_blank"
-                                    style="color:#1f52b0">Generalized Rank-based Evaluation for Knowledge Graph
-                                    Completion: Perspectives, Framework, and Analyses</a></p>
-                            <p class="content">Sooho Moon, Jian Kang, Yunyong Ko</p>
-                            <p>arXiv:2606.08921</p>
-                        </li>
-                        <li>
-                            <p class="content"><a href="https://arxiv.org/abs/2604.10577" target="_blank"
-                                    style="color:#1f52b0">The Blind Spot of Agent Safety: How Benign User Instructions
-                                    Expose Critical Vulnerabilities in Computer-Use Agents</a></p>
-                            <p class="content">Xuwei Ding*, Skylar Zhai*, Linxin Song*, Jiate Li, Taiwei Shi, Nicholas
-                                Meade,
-                                Siva Reddy, Jian Kang, Jieyu
-                                Zhao</p>
-                            <p class="content">arXiv:2604.10577</p>
-                            <p>[<a href="https://github.com/limenlp/OS_Blind" target="_blank"
-                                    style="color:#1f52b0">Code</a>]
-                                [<a href="https://huggingface.co/datasets/lime-nlp/OS-Blind" target="_blank"
-                                    style="color:#1f52b0">Dataset</a>]
-                            </p>
-                            <p class="content">Adopted by the Ant Group for benchmarking the <a
-                                    href="https://ui-venus.github.io/UI-Venus-2/#safety" target="_blank"
-                                    style="color:#1f52b0">safety</a> of UI-Venus-2</p>
-                        </li>
-                        <li>
-                            <p class="content"><a href="https://arxiv.org/abs/2607.09996" target="_blank"
-                                    style="color:#1f52b0">Who&When Pro:
-                                    Can LLMs Really Attribute Failures in AI
-                                    Agents?</a></p>
-                            <p class="content">Jiale Liu, Huajun Xi, Shaokun Zhang, Yifan Zeng, Tianwei Yue, Chi Wang,
-                                Jian Kang, Qingyun Wu, Huazheng Wang</p>
-                            <p class="content">NeurIPS 2026</p>
-                            <p class="content">COLM 2026 Workshop on Lifelong Agents: Learning, Aligning, and Evolving
-                            </p>
-                            <p class="content">ICML 2026 Workshop on Failure Modes of Agentic AI (<strong><span
-                                        style="color:red;">Oral, Top 6
-                                        out of 170</span></strong>)</p>
-                            <p>[<a href="https://whowhenpro.github.io/" target="_blank"
-                                    style="color:#1f52b0">Website</a>] [<a
-                                    href="https://github.com/whowhenpro/whowhen_pro" target="_blank"
-                                    style="color:#1f52b0">Code</a>]</p>
-                        </li>
-                        <li>
-                            <p class="content"><a href="https://arxiv.org/abs/2603.10178" target="_blank"
-                                    style="color:#1f52b0">Video-Based Reward Modeling for Computer-Use Agents</a></p>
-                            <p class="content">Linxin Song*, Jieyu Zhang*, Huanxin Sheng, Taiwei Shi, Rahul Gupta, Yang
-                                Liu, Ranjay Krishna, Jian Kang,
-                                Jieyu Zhao</p>
-                            <p class="content">ECCV 2026</p>
-                            <p>[<a href="https://github.com/limenlp/ExeVRM" target="_blank"
-                                    style="color:#1f52b0">Code</a>]
-                                [<a href="https://huggingface.co/lime-nlp/ExeVRM-8B" target="_blank"
-                                    style="color:#1f52b0">Model</a>]
-                                [<a href="https://huggingface.co/datasets/lime-nlp/ExeVR-53k" target="_blank"
-                                    style="color:#1f52b0">Dataset</a>]
-                            </p>
-                        </li>
-                        <li>
-                            <p class="content"><a href="#" target="_blank" style="color:#1f52b0">Dissecting Hierarchical
-                                    Reasoning Models: A Mechanistic Study</a></p>
-                            <p class="content">Leo Raphael Rodrigues, Jian Kang</p>
-                            <p>ICML 2026 Mechanistic Interpretability Workshop</p>
-                        </li>
-                        <li>
-                            <p class="content"><a href="https://openreview.net/forum?id=GYVAl99Hjf" target="_blank"
-                                    style="color:#1f52b0">Regulating Algorithms Is Not
-                                    Enough. A Study of Content Discovery in Online Platforms</a></p>
-                            <p class="content">Rebecca Salganik, Guillaume Salha-Galvan, Adelaida Afilipoaie, Gustavo
-                                Ferreira, Valdy Wiratama, Anson Kahng, Jian Kang, Heritiana Ranaivoson</p>
-                            <p>ICML 2026</p>
-                        </li>
-                        <li>
-                            <p class="content"><a href="#" target="_blank" style="color:#1f52b0">AIALIB: A Threat
-                                    Library for AI-Generated Code</a></p>
-                            <p class="content">Ali Aljaberi, Jian Kang, Youcheng Sun</p>
-                            <p class="content">ASE 2026</p>
-                            <p>[<a href="https://github.com/Aljaberi500/aialib" target="_blank"
-                                    style="color:#1f52b0">Code</a>]
-                            </p>
-                        </li>
-                    </ul>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="Jian Kang home"><span>Jian Kang</span></a>
+        <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">Menu <span
+            aria-hidden="true">☰</span></button>
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a
+            href="lab.html">Lab</a><a href="publications.html" class="active" aria-current="page">Publications</a><a
+            href="talks.html">Talks</a><a href="services.html">Services</a><a href="teaching.html">Teaching</a></nav>
+      </div>
+    </header>
+    <main class="site-main" id="main">
+      <header class="page-header publications-header">
+        <h1>Publications</h1>
+        <p class="publication-contribution-note">* indicates equal contribution.</p>
+      </header>
+      <div id="publication-results" class="publication-results">
+        <section class="book-chapter-panel" data-publication-section aria-labelledby="book-chapter-heading">
+          <h2 id="book-chapter-heading">Book Chapter</h2>
+          <ol class="publication-list">
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title">Algorithmic Fairness in Graph Mining</h3>
+                <p class="publication-authors">Jian Kang</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">Handbook of Combinatorial Optimization (3rd Edition)
+                  </p>
                 </div>
-                <!-- <h3 class="publication-year">
-                    <span>2025</span>
-                    <button type="button" class="publication-collapse-toggle" data-toggle="collapse"
-                        data-target="#publications-2025" aria-expanded="true" aria-controls="publications-2025"
-                        aria-label="Toggle publications from 2025"><i class="fas fa-chevron-up"
-                            aria-hidden="true"></i></button>
-                </h3> -->
-                <div class="collapse show" id="publications-2025">
-                    <ul>
-                        <li>
-                            <p class="content"><a href="https://arxiv.org/abs/2512.18180" target="_blank"
-                                    style="color:#1f52b0">FairExpand: Individual Fairness on Graphs with Partial
-                                    Similarity
-                                    Information</a></p>
-                            <p class="content">Rebecca Salganik, Yibin Wang, Guillaume Salha-Galvan, Jian Kang</p>
-                            <p>arXiv:2512.18180</p>
-                        </li>
-                        <li>
-                            <p class="content"><a href="https://openreview.net/forum?id=T1NjRBI5xs" target="_blank"
-                                    style="color:#1f52b0">Fair Online Influence Maximization</a></p>
-                            <p class="content">Xiangqi Wang, Shaokun Zhang, Jose Efraim Aguilar Escamilla, Qingyun Wu,
-                                Xiangliang Zhang, Jian Kang, Huazheng Wang</p>
-                            <p>TMLR, 2025</p>
-                        </li>
-                        <li>
-                            <p class="content"><a href="https://arxiv.org/abs/2502.13095" target="_blank"
-                                    style="color:#1f52b0">Understanding
-                                    and Rectifying Safety Perception Distortion in VLMs</a></p>
-                            <p class="content">Xiaohan Zou, Jian Kang, George Kesidis, Lu Lin</p>
-                            <p class="content">NeurIPS 2025</p>
-                            <p>[<a href="https://github.com/Renovamen/ShiftDC" target="_blank"
-                                    style="color:#1f52b0">Code</a>]
-                            </p>
-                        </li>
-                        <li>
-                            <p class="content"><a href="https://arxiv.org/abs/2505.17451" target="_blank"
-                                    style="color:#1f52b0">CLIMB:
-                                    Class-imbalanced Learning Benchmark on Tabular Data
-                                </a></p>
-                            <p class="content">Zhining Liu, Zihao Li, Ze Yang, Tianxin Wei, Jian Kang, Yada
-                                Zhu, Hendrik Hamann, Jingrui He, Hanghang Tong</p>
-                            <p class="content">NeurIPS 2025</p>
-                            <p> [<a href="https://imbalanced-ensemble.readthedocs.io/en/latest/" target="_blank"
-                                    style="color:#1f52b0">Webpage</a>] [<a
-                                    href="https://github.com/ZhiningLiu1998/imbalanced-ensemble" target="_blank"
-                                    style="color:#1f52b0">Benchmark</a>]</p>
-                        </li>
-                        <li>
-                            <p class="content"><a href="https://aclanthology.org/2025.emnlp-main.569/" target="_blank"
-                                    style="color:#1f52b0">Analyzing Uncertainty of
-                                    LLM-as-a-Judge: Interval Evaluations with Conformal Prediction</a></p>
-                            <p class="content">Huanxin Sheng, Xinyi Liu, Hangfeng He, Jieyu Zhao, Jian Kang</p>
-                            <p class="content">EMNLP 2025</p>
-                            <p class="content">&#127942; <strong><span style="color:red;">SAC Highlights</span></strong>
-                            </p>
-                            <p>[<a href="https://github.com/BruceSheng1202/Analyzing-Uncertainty-of-LLM-as-a-Judge"
-                                    target="_blank" style="color:#1f52b0">Code</a>]</p>
-                        </li>
-                        <li>
-                            <p class="content"><a href="https://arxiv.org/abs/2503.23361" target="_blank"
-                                    style="color:#1f52b0">Discovering
-                                    Knowledge Deficiencies of Language Models on Massive
-                                    Knowledge Base</a></p>
-                            <p class="content">Linxin Song, Xuwei Ding, Jieyu Zhang, Taiwei Shi, Ryotaro Shimizu, Rahul
-                                Gupta,
-                                Yang Liu, Jian Kang, Jieyu Zhao</p>
-                            <p class="content">COLM 2025</p>
-                            <p>[<a href="https://maksimstw.github.io/papers/sea" target="_blank"
-                                    style="color:#1f52b0">Webpage</a>] [<a href="https://github.com/limenlp/SEA"
-                                    target="_blank" style="color:#1f52b0">Code</a>]</p>
-                        </li>
-                        <li>
-                            <p class="content"><a href="https://arxiv.org/abs/2506.07288" target="_blank"
-                                    style="color:#1f52b0">EVINET: Towards Open-World
-                                    Graph Learning via Evidential Reasoning Network</a></p>
-                            <p class="content">Weijia Guan, Haohui Wang, Jian Kang, Lihui Liu, Dawei Zhou</p>
-                            <p class="content">KDD 2025</p>
-                            <p>[<a href="https://github.com/SSSKJ/EviNET" target="_blank"
-                                    style="color:#1f52b0">Code</a>]</p>
-                        </li>
-                        <li>
-                            <p class="content"><a href="https://arxiv.org/abs/2507.02151" target="_blank"
-                                    style="color:#1f52b0">Non-exchangeable Conformal
-                                    Prediction for Temporal Graph Neural Networks</a></p>
-                            <p class="content">Tuo Wang, Jian Kang, Yujun Yan, Adithya Kulkarni, Dawei Zhou</p>
-                            <p class="content">KDD 2025</p>
-                            <p>[<a href="https://github.com/ODYSSEYWT/NCPNET" target="_blank"
-                                    style="color:#1f52b0">Code</a>]
-                            </p>
-                        </li>
-                        <li>
-                            <p class="content"><a href="https://arxiv.org/abs/2505.22645" target="_blank"
-                                    style="color:#1f52b0">Characterizing Bias:
-                                    Benchmarking Large Language Models in Simplified versus Traditional Chinese</a></p>
-                            <p class="content">Hanjia Lyu, Jiebo Luo, Jian Kang, Allison Koenecke</p>
-                            <p class="content">FAccT 2025, IC2S2 2025 (parallel talk)</p>
-                            <p>[<a href="https://github.com/brucelyu17/SC-TC-Bench" target="_blank"
-                                    style="color:#1f52b0">Benchmark</a>]</p>
-                        </li>
-                        <li>
-                            <p class="content"><a href="https://openreview.net/forum?id=lZQp7s69ls" target="_blank"
-                                    style="color:#1f52b0">Bridging Fairness and
-                                    Uncertainty: Theoretical Insights and Practical Strategies for Equalized Coverage in
-                                    GNNs</a></p>
-                            <p class="content">Longfeng Wu, Yao Zhou, Jian Kang, Dawei Zhou</p>
-                            <p class="content">WWW 2025</p>
-                            <p>[<a href="https://github.com/wulongfeng/EqualizedCoverage_CP" target="_blank"
-                                    style="color:#1f52b0">Code</a>]</p>
-                        </li>
-                        <li>
-                            <p class="content"><a href="#" target="_blank" style="color:#1f52b0">MusicSem: A Dataset of
-                                    Music
-                                    Descriptions on Reddit Capturing Musical Semantics</a></p>
-                            <p class="content">Rebecca Salganik, Teng Tu, Fei-Yueh Chen, Xiaohao Liu, Kaifeng Lu, Ethan
-                                Luvisia,
-                                Zhiyao Duan, Guillaume Salha-Galvan, Anson Kahng, Yunshan Ma, Jian Kang</p>
-                            <p class="content">ISMIR 2025</p>
-                            <p> [<a href="https://music-sem-web.vercel.app/" target="_blank"
-                                    style="color:#1f52b0">Webpage</a>]
-                                [<a href="https://huggingface.co/datasets/Rsalga/MusicSem/tree/main" target="_blank"
-                                    style="color:#1f52b0">Benchmark</a>]</p>
-                        </li>
-                    </ul>
+              </article>
+            </li>
+          </ol>
+        </section>
+        <section class="papers-section" data-publication-section aria-labelledby="papers-heading">
+          <h2 id="papers-heading">Papers</h2>
+          <ol class="publication-list">
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="https://arxiv.org/abs/2606.14260" target="_blank"
+                    rel="noopener noreferrer">ChronoID: Infusing Explicit Temporal Signals into Semantic IDs for
+                    Generative Recommendation</a></h3>
+                <p class="publication-authors">Dongdong Nian, Dongqi Fu, Chenliang Xu, Yinglong Xia, Hong Li, Hong Yan,
+                  Jian Kang</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">WSDM 2027</p>
                 </div>
-                <!-- <h3 class="publication-year">
-                    <span>2024</span>
-                    <button type="button" class="publication-collapse-toggle" data-toggle="collapse"
-                        data-target="#publications-2024" aria-expanded="true" aria-controls="publications-2024"
-                        aria-label="Toggle publications from 2024"><i class="fas fa-chevron-up"
-                            aria-hidden="true"></i></button>
-                </h3> -->
-                <div class="collapse show" id="publications-2024">
-                    <ul>
-                        <li>
-                            <p class="content"><a href="https://arxiv.org/abs/2402.16387" target="_blank"
-                                    style="color:#1f52b0">On the Generalization Capability of Temporal Graph Learning
-                                    Algorithms: Theoretical Insights and a Simpler Method</a></p>
-                            <p class="content">Weilin Cong, Jian Kang, Hanghang Tong, Mehrdad Mahdavi</p>
-                            <p>arXiv:2402.16387</p>
-                        </li>
-                        <li>
-                            <p class="content"><a href="https://openreview.net/forum?id=1mAaewThcz" target="_blank"
-                                    style="color:#1f52b0">Theoretical
-                                    and Empirical Insights into the Origins of Degree Bias in Graph Neural Networks</a>
-                            </p>
-                            <p class="content">Arjun Subramonian, Jian Kang, Yizhou Sun
-                            <p class="content">NeurIPS 2024</p>
-                            <p>[<a href="https://github.com/ArjunSubramonian/degree-bias-exploration" target="_blank"
-                                    style="color:#1f52b0">Code</a>]</p>
-                        </li>
-                        <li>
-                            <p class="content"><a href="https://openreview.net/forum?id=VSz9na5Jtl" target="_blank"
-                                    style="color:#1f52b0">PageRank
-                                    Bandits for Link Prediction</a></p>
-                            <p class="content">Yikun Ban, Jiaru Zou, Zihao Li, Yunzhe Qi, Dongqi Fu, Jian Kang,
-                                Hanghang Tong, Jingrui He</p>
-                            <p class="content">NeurIPS 2024</p>
-                            <p>[<a href="https://github.com/jiaruzouu/PRB" target="_blank"
-                                    style="color:#1f52b0">Code</a>]</p>
-                        </li>
-                        <li>
-                            <p class="content"><a href="/files/papers/he24sensitivity.pdf" target="_blank"
-                                    style="color:#1f52b0">On the Sensitivity of Individual Fairness: Measures and Robust
-                                    Algorithms</a></p>
-                            <p class="content">Xinyu He, Jian Kang, Ruizhong Qiu, Fei Wang, Jose Sepulveda,
-                                Hanghang Tong</p>
-                            <p>CIKM 2024</p>
-                        </li>
-                        <li>
-                            <p class="content"><a href="/files/papers/salganik24larp.pdf" target="_blank"
-                                    style="color:#1f52b0">LARP: Language Audio Relational Pre-training for Cold-Start
-                                    Playlist
-                                    Continuation</a></p>
-                            <p class="content">Rebecca Salganik, Xiaohao Liu, Yunshan Ma, Jian Kang,
-                                Tat-Seng Chua</p>
-                            <p class="content">KDD 2024</p>
-                            <p>[<a href="https://github.com/Rsalganik1123/LARP" target="_blank"
-                                    style="color:#1f52b0">Code</a>]
-                            </p>
-                        </li>
-                        <li>
-                            <p class="content"><a href="/files/papers/zhao24conformalized.pdf" target="_blank"
-                                    style="color:#1f52b0">Conformalized Link Prediction on Graph Neural Networks</a></p>
-                            <p class="content">Tianyi Zhao, Jian Kang, Lu Cheng</p>
-                            <p>KDD 2024</p>
-                        </li>
-                        <li>
-                            <p class="content"><a href="/files/papers/yoo24ensuring.pdf" target="_blank"
-                                    style="color:#1f52b0">Ensuring User-side Fairness in Dynamic Recommender
-                                    Systems</a></p>
-                            <p class="content">Hyunsik Yoo, Zhichen Zeng, Jian Kang, Zhining Liu, David Zhou,
-                                Fei Wang, Eunice Chan, Hanghang Tong</p>
-                            <p class="content">WWW 2024</p>
-                            <p>[<a href="https://github.com/hsyoo32/fade" target="_blank"
-                                    style="color:#1f52b0">Code</a>]</p>
-                        </li>
-                        <li>
-                            <p class="content"><a href="https://openreview.net/forum?id=iS5ADHNg2A" target="_blank"
-                                    style="color:#1f52b0">Deceptive Fairness Attacks on Graphs via Meta Learning</a></p>
-                            <p class="content">Jian Kang, Yinglong Xia, Ross Maciejewski, Jiebo Luo, Hanghang
-                                Tong</p>
-                            <p class="content">ICLR 2024</p>
-                            <p>[<a href="https://github.com/jiank2/FATE" target="_blank" style="color:#1f52b0">Code</a>]
-                            </p>
-                        </li>
-                    </ul>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="https://arxiv.org/abs/2610.21439" target="_blank"
+                    rel="noopener noreferrer">Each Reward to Its Relevant Tokens: Reward-Specific Token-Level Credit
+                    Assignment for Multi-Reward RL</a></h3>
+                <p class="publication-authors">Skylar Zhai, Haonan Wang, Zhining Liu, Linxin Song, Xuwei Ding, Jingcheng
+                  Liang, Jian Kang</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">arXiv:2610.21439</p>
                 </div>
-                <!-- <h3 class="publication-year">
-                    <span>2023</span>
-                    <button type="button" class="publication-collapse-toggle" data-toggle="collapse"
-                        data-target="#publications-2023" aria-expanded="true" aria-controls="publications-2023"
-                        aria-label="Toggle publications from 2023"><i class="fas fa-chevron-up"
-                            aria-hidden="true"></i></button>
-                </h3> -->
-                <div class="collapse show" id="publications-2023">
-                    <ul>
-                        <li>
-                            <p class="content"><a href="https://openreview.net/forum?id=4RiLDrCbzW" target="_blank"
-                                    style="color:#1f52b0">BeMap: Balanced Message Passing for Fair Graph Neural
-                                    Network</a></p>
-                            <p class="content">Xiao Lin, Jian Kang, Weilin Cong, Hanghang Tong</p>
-                            <p class="content">LoG 2023</p>
-                            <p>[<a href="https://github.com/xiaolin-cs/BeMap" target="_blank"
-                                    style="color:#1f52b0">Code</a>]
-                            </p>
-                        </li>
-                        <li>
-                            <p class="content"><a href="https://openreview.net/forum?id=ayPPc0SyLv1" target="_blank"
-                                    style="color:#1f52b0">Do We Really Need Complicated Model Architectures For Temporal
-                                    Networks?</a></p>
-                            <p class="content">Weilin Cong, Si Zhang, Jian Kang, Baichuan Yuan, Hao Wu, Xin
-                                Zhou, Hanghang Tong, Mehrdad Mahdavi</p>
-                            <p class="content">ICLR 2023</p>
-                            <p class="content"><strong><span style="color:red;">Oral, Top 5%</span></strong></p>
-                            <p>
-                                [<a href="https://github.com/CongWeilin/GraphMixer" target="_blank"
-                                    style="color:#1f52b0">Code</a>]
-                                [<a href="https://github.com/fpour/TGB_Baselines" target="_blank"
-                                    style="color:#1f52b0">Code
-                                    (TGB version)</a>]
-                                [<a href="https://www.youtube.com/watch?v=61edyzoCT1I" target="_blank"
-                                    style="color:#1f52b0">Talk (long version)</a>]
-                            </p>
-                        </li>
-                    </ul>
-                    <!-- </div>
-                <h3 class="publication-year">
-                    <span>2022</span>
-                    <button type="button" class="publication-collapse-toggle" data-toggle="collapse"
-                        data-target="#publications-2022" aria-expanded="true" aria-controls="publications-2022"
-                        aria-label="Toggle publications from 2022"><i class="fas fa-chevron-up"
-                            aria-hidden="true"></i></button>
-                </h3> -->
-                    <div class="collapse show" id="publications-2022">
-                        <ul>
-                            <li>
-                                <p class="content"><a href="/files/papers/kang22infofair.pdf" target="_blank"
-                                        style="color:#1f52b0">InfoFair: Information-Theoretic Intersectional
-                                        Fairness</a>
-                                </p>
-                                <p class="content">Jian Kang, Tiankai Xie, Xintao Wu, Ross Maciejewski, Hanghang
-                                    Tong</p>
-                                <p class="content">IEEE Big Data 2022</p>
-                                <p>
-                                    [<a href="/files/slides/kang22infofair_slides.pdf" target="_blank"
-                                        style="color:#1f52b0">Slides</a>]
-                                    [<a href="https://github.com/jiank2/InfoFair" target="_blank"
-                                        style="color:#1f52b0">Code</a>]
-                                </p>
-                            </li>
-                            <li>
-                                <p class="content"><a href="/files/papers/wang22ifig.pdf" target="_blank"
-                                        style="color:#1f52b0">iFiG: Individually Fair Multi-view Graph Clustering</a>
-                                </p>
-                                <p class="content">Yian Wang, Jian Kang, Yinglong Xia, Jiebo Luo, Hanghang Tong</p>
-                                <p class="content">IEEE Big Data 2022</p>
-                                <p>[<a href="https://github.com/Jazzssmine/ifig-bigdata22" target="_blank"
-                                        style="color:#1f52b0">Code</a>]</p>
-                            </li>
-                            <li>
-                                <p class="content"><a href="/files/papers/kang22jurygcn.pdf" target="_blank"
-                                        style="color:#1f52b0">JuryGCN: Quantifying Jackknife Uncertainty on Graph
-                                        Convolutional
-                                        Networks</a></p>
-                                <p class="content">Jian Kang*, Qinghai Zhou*, Hanghang Tong</p>
-                                <p class="content">KDD 2022</p>
-                                <p>
-                                    [<a href="/files/slides/kang22jurygcn_slides.pdf" target="_blank"
-                                        style="color:#1f52b0">Slides</a>]
-                                    [<a href="https://github.com/BlueWhaleZhou/JuryGCN_UQ" target="_blank"
-                                        style="color:#1f52b0">Code</a>]
-                                </p>
-                            </li>
-                            <li>
-                                <p class="content"><a href="/files/papers/kang22rawlsgcn.pdf" target="_blank"
-                                        style="color:#1f52b0">RawlsGCN: Towards Rawlsian Difference Principle on Graph
-                                        Convolutional
-                                        Network</a></p>
-                                <p class="content">Jian Kang, Yan Zhu, Yinglong Xia, Jiebo Luo, Hanghang Tong</p>
-                                <p class="content">WWW 2022</p>
-                                <p>
-                                    [<a href="/files/slides/kang22rawlsgcn_slides.pdf" target="_blank"
-                                        style="color:#1f52b0">Slides</a>]
-                                    [<a href="https://github.com/jiank2/RawlsGCN" target="_blank"
-                                        style="color:#1f52b0">Code</a>]
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- <h3 class="publication-year">
-                    <span>2021</span>
-                    <button type="button" class="publication-collapse-toggle" data-toggle="collapse"
-                        data-target="#publications-2021" aria-expanded="true" aria-controls="publications-2021"
-                        aria-label="Toggle publications from 2021"><i class="fas fa-chevron-up"
-                            aria-hidden="true"></i></button>
-                </h3> -->
-                    <div class="collapse show" id="publications-2021">
-                        <ul>
-                            <li>
-                                <p class="content"><a href="https://arxiv.org/abs/2111.12776" target="_blank"
-                                        style="color:#1f52b0">IMBENS: Ensemble Class-imbalanced Learning in Python</a>
-                                </p>
-                                <p class="content">Zhining Liu, Jian Kang, Hanghang Tong, Yi Chang</p>
-                                <p class="content">arXiv:2111.12776</p>
-                                <p>[<a href="https://imbalanced-ensemble.readthedocs.io/en/latest/" target="_blank"
-                                        style="color:#1f52b0">Webpage</a>] [<a
-                                        href="https://github.com/ZhiningLiu1998/imbalanced-ensemble" target="_blank"
-                                        style="color:#1f52b0">Package</a>]
-                                </p>
-                            </li>
-                            <li>
-                                <p class="content"><a href="/files/papers/xie21fairrankvis.pdf" target="_blank"
-                                        style="color:#1f52b0">FairRankVis: A Visual Analytics Framework for Exploring
-                                        Algorithmic
-                                        Fairness in Graph Mining Models</a></p>
-                                <p class="content">Tiankai Xie, Yuxin Ma, Jian Kang, Hanghang Tong, Ross
-                                    Maciejewski</p>
-                                <p>TVCG, 2021</p>
-                            </li>
-                            <li>
-                                <p class="content"><a href="/files/papers/dong21redress.pdf" target="_blank"
-                                        style="color:#1f52b0">Individual Fairness for Graph Neural Networks: A Ranking
-                                        based
-                                        Approach</a></p>
-                                <p class="content">Yushun Dong, Jian Kang, Hanghang Tong, Jundong Li</p>
-                                <p class="content">KDD 2021</p>
-                                <p>[<a href="https://github.com/yushundong/REDRESS" target="_blank"
-                                        style="color:#1f52b0">Code</a>]
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- <h3 class="publication-year">
-                    <span>2020</span>
-                    <button type="button" class="publication-collapse-toggle" data-toggle="collapse"
-                        data-target="#publications-2020" aria-expanded="true" aria-controls="publications-2020"
-                        aria-label="Toggle publications from 2020"><i class="fas fa-chevron-up"
-                            aria-hidden="true"></i></button>
-                </h3> -->
-                    <div class="collapse show" id="publications-2020">
-                        <ul>
-                            <li>
-                                <p class="content"><a href="/files/papers/wang20aurora.pdf" target="_blank"
-                                        style="color:#1f52b0">Graph Ranking Auditing: Problem Definitions and Fast
-                                        Solutions</a></p>
-                                <p class="content">Meijia Wang, Jian Kang, Nan Cao, Yinglong Xia, Wei Fan, Hanghang
-                                    Tong</p>
-                                <p>TKDE, 2020</p>
-                            </li>
-                            <li>
-                                <p class="content"><a href="/files/papers/kang20inform.pdf" target="_blank"
-                                        style="color:#1f52b0">InFoRM: Individual Fairness on Graph Mining</a></p>
-                                <p class="content">Jian Kang, Jingrui He, Ross Maciejewski, Hanghang Tong</p>
-                                <p class="content">KDD 2020</p>
-                                <p>
-                                    [<a href="/files/slides/kang20inform_slides.pdf" target="_blank"
-                                        style="color:#1f52b0">Slides</a>]
-                                    [<a href="https://github.com/jiank2/inform" target="_blank"
-                                        style="color:#1f52b0">Code</a>]
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- <h3 class="publication-year">
-                    <span>2019</span>
-                    <button type="button" class="publication-collapse-toggle" data-toggle="collapse"
-                        data-target="#publications-2019" aria-expanded="true" aria-controls="publications-2019"
-                        aria-label="Toggle publications from 2019"><i class="fas fa-chevron-up"
-                            aria-hidden="true"></i></button>
-                </h3> -->
-                    <div class="collapse show" id="publications-2019">
-                        <ul>
-                            <li>
-                                <p class="content"><a href="/files/papers/kang19n2n.pdf" target="_blank"
-                                        style="color:#1f52b0">N2N:
-                                        Network Derivative Mining</a></p>
-                                <p class="content">Jian Kang, Hanghang Tong</p>
-                                <p class="content">CIKM 2019</p>
-                                <p>
-                                    [<a href="/files/slides/kang19n2n_slides.pdf" target="_blank"
-                                        style="color:#1f52b0">Slides</a>]
-                                    [<a href="/files/code/n2n.zip" target="_blank" style="color:#1f52b0">Code</a>]
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- <h3 class="publication-year">
-                    <span>2018</span>
-                    <button type="button" class="publication-collapse-toggle" data-toggle="collapse"
-                        data-target="#publications-2018" aria-expanded="true" aria-controls="publications-2018"
-                        aria-label="Toggle publications from 2018"><i class="fas fa-chevron-up"
-                            aria-hidden="true"></i></button>
-                </h3> -->
-                    <div class="collapse show" id="publications-2018">
-                        <ul>
-                            <li>
-                                <p class="content"><a href="/files/papers/kang18xrank.pdf" target="_blank"
-                                        style="color:#1f52b0">X-Rank: Explainable Ranking in Complex Multi-layered
-                                        Networks</a></p>
-                                <p class="content">Jian Kang*, Scott Freitas*, Haichao Yu, Yinglong Xia, Nan Cao,
-                                    Hanghang Tong</p>
-                                <p>CIKM 2018</p>
-                            </li>
-                            <li>
-                                <p class="content"><a href="https://ieeexplore.ieee.org/document/8622563"
-                                        target="_blank" style="color:#1f52b0">AURORA: Auditing PageRank on Large
-                                        Graphs</a></p>
-                                <p class="content">Jian Kang, Meijia Wang, Nan Cao, Yinglong Xia, Wei Fan, Hanghang
-                                    Tong</p>
-                                <p class="content">IEEE Big Data 2018</p>
-                                <p>
-                                    [<a href="/files/slides/kang18aurora_slides.pdf" target="_blank"
-                                        style="color:#1f52b0">Slides</a>]
-                                    [<a href="/files/code/aurora-v2.zip" target="_blank" style="color:#1f52b0">Code</a>]
-                                    <em>(check
-                                        out the updated results in our TKDE paper)</em>
-                                </p>
-                            </li>
-                            <li>
-                                <p class="content"><a href="#" style="color:#1f52b0">Visual Mining of Multi-sourced
-                                        Networks</a></p>
-                                <p class="content">Haichao Yu, Jian Kang, Yinglong Xia, Nan Cao, Hanghang Tong</p>
-                                <p>ChinaVis 2018</p>
-                            </li>
-                        </ul>
-                    </div>
-            </section>
-        </div>
-
-        <!-- Content Row --><!-- /.row -->
-    </div>
-    <!-- /.container --><!-- Footer -->
-
-    <!-- Footer -->
-    <footer class="py-1" style="background-color: #037FFB;">
-        <div class="container text-center text-white">
-            Oops, no more things on this page.
-        </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="https://arxiv.org/abs/2609.24432" target="_blank"
+                    rel="noopener noreferrer">1% of Tokens Can Be Enough: On Gradient Estimation in On-Policy
+                    Distillation</a></h3>
+                <p class="publication-authors">Huanxin Sheng, Zhiling Ye, Haonan Wang, Jian Wang, Jinjie Gu, Jian Kang
+                </p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">arXiv:2609.24432</p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="https://arxiv.org/abs/2606.08921" target="_blank"
+                    rel="noopener noreferrer">Generalized Rank-based Evaluation for Knowledge Graph Completion:
+                    Perspectives, Framework, and Analyses</a></h3>
+                <p class="publication-authors">Sooho Moon, Jian Kang, Yunyong Ko</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">arXiv:2606.08921</p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="https://arxiv.org/abs/2604.10577" target="_blank"
+                    rel="noopener noreferrer">The Blind Spot of Agent Safety: How Benign User Instructions Expose
+                    Critical Vulnerabilities in Computer-Use Agents</a></h3>
+                <p class="publication-authors">Xuwei Ding*, Skylar Zhai*, Linxin Song*, Jiate Li, Taiwei Shi, Nicholas
+                  Meade, Siva Reddy, Jian Kang, Jieyu Zhao</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">arXiv:2604.10577</p>
+                  <p class="publication-detail">Adopted by the Ant Group for benchmarking the <a
+                      href="https://ui-venus.github.io/UI-Venus-2/#safety" target="_blank"
+                      rel="noopener noreferrer">safety</a> of UI-Venus-2</p>
+                  <p class="publication-resources">[<a href="https://github.com/limenlp/OS_Blind" target="_blank"
+                      rel="noopener noreferrer">Code</a>] [<a href="https://huggingface.co/datasets/lime-nlp/OS-Blind"
+                      target="_blank" rel="noopener noreferrer">Dataset</a>] </p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="https://arxiv.org/abs/2607.09996" target="_blank"
+                    rel="noopener noreferrer">Who&amp;When Pro: Can LLMs Really Attribute Failures in AI Agents?</a>
+                </h3>
+                <p class="publication-authors">Jiale Liu, Huajun Xi, Shaokun Zhang, Yifan Zeng, Tianwei Yue, Chi Wang,
+                  Jian Kang, Qingyun Wu, Huazheng Wang</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">NeurIPS 2026</p>
+                  <p class="publication-detail">COLM 2026 Workshop on Lifelong Agents: Learning, Aligning, and Evolving
+                  </p>
+                  <p class="publication-detail">ICML 2026 Workshop on Failure Modes of Agentic AI (<strong><span>Oral,
+                        Top 6 out of 170</span></strong>)</p>
+                  <p class="publication-resources">[<a href="https://whowhenpro.github.io/" target="_blank"
+                      rel="noopener noreferrer">Website</a>] [<a href="https://github.com/whowhenpro/whowhen_pro"
+                      target="_blank" rel="noopener noreferrer">Code</a>]</p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="https://arxiv.org/abs/2603.10178" target="_blank"
+                    rel="noopener noreferrer">Video-Based Reward Modeling for Computer-Use Agents</a></h3>
+                <p class="publication-authors">Linxin Song*, Jieyu Zhang*, Huanxin Sheng, Taiwei Shi, Rahul Gupta, Yang
+                  Liu, Ranjay Krishna, Jian Kang, Jieyu Zhao</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">ECCV 2026</p>
+                  <p class="publication-resources">[<a href="https://github.com/limenlp/ExeVRM" target="_blank"
+                      rel="noopener noreferrer">Code</a>] [<a href="https://huggingface.co/lime-nlp/ExeVRM-8B"
+                      target="_blank" rel="noopener noreferrer">Model</a>] [<a
+                      href="https://huggingface.co/datasets/lime-nlp/ExeVR-53k" target="_blank"
+                      rel="noopener noreferrer">Dataset</a>] </p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title">Dissecting Hierarchical Reasoning Models: A Mechanistic Study</h3>
+                <p class="publication-authors">Leo Raphael Rodrigues, Jian Kang</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">ICML 2026 Mechanistic Interpretability Workshop</p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="https://openreview.net/forum?id=GYVAl99Hjf" target="_blank"
+                    rel="noopener noreferrer">Regulating Algorithms Is Not Enough. A Study of Content Discovery in
+                    Online Platforms</a></h3>
+                <p class="publication-authors">Rebecca Salganik, Guillaume Salha-Galvan, Adelaida Afilipoaie, Gustavo
+                  Ferreira, Valdy Wiratama, Anson Kahng, Jian Kang, Heritiana Ranaivoson</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">ICML 2026</p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title">AIALIB: A Threat Library for AI-Generated Code</h3>
+                <p class="publication-authors">Ali Aljaberi, Jian Kang, Youcheng Sun</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">ASE 2026</p>
+                  <p class="publication-resources">[<a href="https://github.com/Aljaberi500/aialib" target="_blank"
+                      rel="noopener noreferrer">Code</a>] </p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="https://arxiv.org/abs/2512.18180" target="_blank"
+                    rel="noopener noreferrer">FairExpand: Individual Fairness on Graphs with Partial Similarity
+                    Information</a></h3>
+                <p class="publication-authors">Rebecca Salganik, Yibin Wang, Guillaume Salha-Galvan, Jian Kang</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">arXiv:2512.18180</p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="https://openreview.net/forum?id=T1NjRBI5xs" target="_blank"
+                    rel="noopener noreferrer">Fair Online Influence Maximization</a></h3>
+                <p class="publication-authors">Xiangqi Wang, Shaokun Zhang, Jose Efraim Aguilar Escamilla, Qingyun Wu,
+                  Xiangliang Zhang, Jian Kang, Huazheng Wang</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">TMLR, 2025</p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="https://arxiv.org/abs/2502.13095" target="_blank"
+                    rel="noopener noreferrer">Understanding and Rectifying Safety Perception Distortion in VLMs</a></h3>
+                <p class="publication-authors">Xiaohan Zou, Jian Kang, George Kesidis, Lu Lin</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">NeurIPS 2025</p>
+                  <p class="publication-resources">[<a href="https://github.com/Renovamen/ShiftDC" target="_blank"
+                      rel="noopener noreferrer">Code</a>] </p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="https://arxiv.org/abs/2505.17451" target="_blank"
+                    rel="noopener noreferrer">CLIMB: Class-imbalanced Learning Benchmark on Tabular Data </a></h3>
+                <p class="publication-authors">Zhining Liu, Zihao Li, Ze Yang, Tianxin Wei, Jian Kang, Yada Zhu, Hendrik
+                  Hamann, Jingrui He, Hanghang Tong</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">NeurIPS 2025</p>
+                  <p class="publication-resources"> [<a href="https://imbalanced-ensemble.readthedocs.io/en/latest/"
+                      target="_blank" rel="noopener noreferrer">Webpage</a>] [<a
+                      href="https://github.com/ZhiningLiu1998/imbalanced-ensemble" target="_blank"
+                      rel="noopener noreferrer">Benchmark</a>]</p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="https://aclanthology.org/2025.emnlp-main.569/" target="_blank"
+                    rel="noopener noreferrer">Analyzing Uncertainty of LLM-as-a-Judge: Interval Evaluations with
+                    Conformal Prediction</a></h3>
+                <p class="publication-authors">Huanxin Sheng, Xinyi Liu, Hangfeng He, Jieyu Zhao, Jian Kang</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">EMNLP 2025</p>
+                  <p class="publication-detail">🏆 <strong><span>SAC Highlights</span></strong>
+                  </p>
+                  <p class="publication-resources">[<a
+                      href="https://github.com/BruceSheng1202/Analyzing-Uncertainty-of-LLM-as-a-Judge" target="_blank"
+                      rel="noopener noreferrer">Code</a>]</p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="https://arxiv.org/abs/2503.23361" target="_blank"
+                    rel="noopener noreferrer">Discovering Knowledge Deficiencies of Language Models on Massive Knowledge
+                    Base</a></h3>
+                <p class="publication-authors">Linxin Song, Xuwei Ding, Jieyu Zhang, Taiwei Shi, Ryotaro Shimizu, Rahul
+                  Gupta, Yang Liu, Jian Kang, Jieyu Zhao</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">COLM 2025</p>
+                  <p class="publication-resources">[<a href="https://maksimstw.github.io/papers/sea" target="_blank"
+                      rel="noopener noreferrer">Webpage</a>] [<a href="https://github.com/limenlp/SEA" target="_blank"
+                      rel="noopener noreferrer">Code</a>]</p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="https://arxiv.org/abs/2506.07288" target="_blank"
+                    rel="noopener noreferrer">EVINET: Towards Open-World Graph Learning via Evidential Reasoning
+                    Network</a></h3>
+                <p class="publication-authors">Weijia Guan, Haohui Wang, Jian Kang, Lihui Liu, Dawei Zhou</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">KDD 2025</p>
+                  <p class="publication-resources">[<a href="https://github.com/SSSKJ/EviNET" target="_blank"
+                      rel="noopener noreferrer">Code</a>]</p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="https://arxiv.org/abs/2507.02151" target="_blank"
+                    rel="noopener noreferrer">Non-exchangeable Conformal Prediction for Temporal Graph Neural
+                    Networks</a></h3>
+                <p class="publication-authors">Tuo Wang, Jian Kang, Yujun Yan, Adithya Kulkarni, Dawei Zhou</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">KDD 2025</p>
+                  <p class="publication-resources">[<a href="https://github.com/ODYSSEYWT/NCPNET" target="_blank"
+                      rel="noopener noreferrer">Code</a>] </p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="https://arxiv.org/abs/2505.22645" target="_blank"
+                    rel="noopener noreferrer">Characterizing Bias: Benchmarking Large Language Models in Simplified
+                    versus Traditional Chinese</a></h3>
+                <p class="publication-authors">Hanjia Lyu, Jiebo Luo, Jian Kang, Allison Koenecke</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">FAccT 2025, IC2S2 2025 (parallel talk)</p>
+                  <p class="publication-resources">[<a href="https://github.com/brucelyu17/SC-TC-Bench" target="_blank"
+                      rel="noopener noreferrer">Benchmark</a>]</p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="https://openreview.net/forum?id=lZQp7s69ls" target="_blank"
+                    rel="noopener noreferrer">Bridging Fairness and Uncertainty: Theoretical Insights and Practical
+                    Strategies for Equalized Coverage in GNNs</a></h3>
+                <p class="publication-authors">Longfeng Wu, Yao Zhou, Jian Kang, Dawei Zhou</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">WWW 2025</p>
+                  <p class="publication-resources">[<a href="https://github.com/wulongfeng/EqualizedCoverage_CP"
+                      target="_blank" rel="noopener noreferrer">Code</a>]</p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title">MusicSem: A Dataset of Music Descriptions on Reddit Capturing Musical
+                  Semantics</h3>
+                <p class="publication-authors">Rebecca Salganik, Teng Tu, Fei-Yueh Chen, Xiaohao Liu, Kaifeng Lu, Ethan
+                  Luvisia, Zhiyao Duan, Guillaume Salha-Galvan, Anson Kahng, Yunshan Ma, Jian Kang</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">ISMIR 2025</p>
+                  <p class="publication-resources"> [<a href="https://music-sem-web.vercel.app/" target="_blank"
+                      rel="noopener noreferrer">Webpage</a>] [<a
+                      href="https://huggingface.co/datasets/Rsalga/MusicSem/tree/main" target="_blank"
+                      rel="noopener noreferrer">Benchmark</a>]</p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="https://arxiv.org/abs/2402.16387" target="_blank"
+                    rel="noopener noreferrer">On the Generalization Capability of Temporal Graph Learning Algorithms:
+                    Theoretical Insights and a Simpler Method</a></h3>
+                <p class="publication-authors">Weilin Cong, Jian Kang, Hanghang Tong, Mehrdad Mahdavi</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">arXiv:2402.16387</p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="https://openreview.net/forum?id=1mAaewThcz" target="_blank"
+                    rel="noopener noreferrer">Theoretical and Empirical Insights into the Origins of Degree Bias in
+                    Graph Neural Networks</a>
+                </h3>
+                <p class="publication-authors">Arjun Subramonian, Jian Kang, Yizhou Sun </p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">NeurIPS 2024</p>
+                  <p class="publication-resources">[<a
+                      href="https://github.com/ArjunSubramonian/degree-bias-exploration" target="_blank"
+                      rel="noopener noreferrer">Code</a>]</p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="https://openreview.net/forum?id=VSz9na5Jtl" target="_blank"
+                    rel="noopener noreferrer">PageRank Bandits for Link Prediction</a></h3>
+                <p class="publication-authors">Yikun Ban, Jiaru Zou, Zihao Li, Yunzhe Qi, Dongqi Fu, Jian Kang, Hanghang
+                  Tong, Jingrui He</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">NeurIPS 2024</p>
+                  <p class="publication-resources">[<a href="https://github.com/jiaruzouu/PRB" target="_blank"
+                      rel="noopener noreferrer">Code</a>]</p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="files/papers/he24sensitivity.pdf" target="_blank"
+                    rel="noopener noreferrer">On the Sensitivity of Individual Fairness: Measures and Robust
+                    Algorithms</a></h3>
+                <p class="publication-authors">Xinyu He, Jian Kang, Ruizhong Qiu, Fei Wang, Jose Sepulveda, Hanghang
+                  Tong</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">CIKM 2024</p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="files/papers/salganik24larp.pdf" target="_blank"
+                    rel="noopener noreferrer">LARP: Language Audio Relational Pre-training for Cold-Start Playlist
+                    Continuation</a></h3>
+                <p class="publication-authors">Rebecca Salganik, Xiaohao Liu, Yunshan Ma, Jian Kang, Tat-Seng Chua</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">KDD 2024</p>
+                  <p class="publication-resources">[<a href="https://github.com/Rsalganik1123/LARP" target="_blank"
+                      rel="noopener noreferrer">Code</a>] </p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="files/papers/zhao24conformalized.pdf" target="_blank"
+                    rel="noopener noreferrer">Conformalized Link Prediction on Graph Neural Networks</a></h3>
+                <p class="publication-authors">Tianyi Zhao, Jian Kang, Lu Cheng</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">KDD 2024</p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="files/papers/yoo24ensuring.pdf" target="_blank"
+                    rel="noopener noreferrer">Ensuring User-side Fairness in Dynamic Recommender Systems</a></h3>
+                <p class="publication-authors">Hyunsik Yoo, Zhichen Zeng, Jian Kang, Zhining Liu, David Zhou, Fei Wang,
+                  Eunice Chan, Hanghang Tong</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">WWW 2024</p>
+                  <p class="publication-resources">[<a href="https://github.com/hsyoo32/fade" target="_blank"
+                      rel="noopener noreferrer">Code</a>]</p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="https://openreview.net/forum?id=iS5ADHNg2A" target="_blank"
+                    rel="noopener noreferrer">Deceptive Fairness Attacks on Graphs via Meta Learning</a></h3>
+                <p class="publication-authors">Jian Kang, Yinglong Xia, Ross Maciejewski, Jiebo Luo, Hanghang Tong</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">ICLR 2024</p>
+                  <p class="publication-resources">[<a href="https://github.com/jiank2/FATE" target="_blank"
+                      rel="noopener noreferrer">Code</a>] </p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="https://openreview.net/forum?id=4RiLDrCbzW" target="_blank"
+                    rel="noopener noreferrer">BeMap: Balanced Message Passing for Fair Graph Neural Network</a></h3>
+                <p class="publication-authors">Xiao Lin, Jian Kang, Weilin Cong, Hanghang Tong</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">LoG 2023</p>
+                  <p class="publication-resources">[<a href="https://github.com/xiaolin-cs/BeMap" target="_blank"
+                      rel="noopener noreferrer">Code</a>] </p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="https://openreview.net/forum?id=ayPPc0SyLv1" target="_blank"
+                    rel="noopener noreferrer">Do We Really Need Complicated Model Architectures For Temporal
+                    Networks?</a></h3>
+                <p class="publication-authors">Weilin Cong, Si Zhang, Jian Kang, Baichuan Yuan, Hao Wu, Xin Zhou,
+                  Hanghang Tong, Mehrdad Mahdavi</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">ICLR 2023</p>
+                  <p class="publication-detail"><strong><span>Oral, Top 5%</span></strong></p>
+                  <p class="publication-resources"> [<a href="https://github.com/CongWeilin/GraphMixer" target="_blank"
+                      rel="noopener noreferrer">Code</a>] [<a href="https://github.com/fpour/TGB_Baselines"
+                      target="_blank" rel="noopener noreferrer">Code (TGB version)</a>] [<a
+                      href="https://www.youtube.com/watch?v=61edyzoCT1I" target="_blank" rel="noopener noreferrer">Talk
+                      (long version)</a>] </p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="files/papers/kang22infofair.pdf" target="_blank"
+                    rel="noopener noreferrer">InfoFair: Information-Theoretic Intersectional Fairness</a>
+                </h3>
+                <p class="publication-authors">Jian Kang, Tiankai Xie, Xintao Wu, Ross Maciejewski, Hanghang Tong</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">IEEE Big Data 2022</p>
+                  <p class="publication-resources"> [<a href="files/slides/kang22infofair_slides.pdf" target="_blank"
+                      rel="noopener noreferrer">Slides</a>] [<a href="https://github.com/jiank2/InfoFair"
+                      target="_blank" rel="noopener noreferrer">Code</a>] </p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="files/papers/wang22ifig.pdf" target="_blank"
+                    rel="noopener noreferrer">iFiG: Individually Fair Multi-view Graph Clustering</a>
+                </h3>
+                <p class="publication-authors">Yian Wang, Jian Kang, Yinglong Xia, Jiebo Luo, Hanghang Tong</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">IEEE Big Data 2022</p>
+                  <p class="publication-resources">[<a href="https://github.com/Jazzssmine/ifig-bigdata22"
+                      target="_blank" rel="noopener noreferrer">Code</a>]</p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="files/papers/kang22jurygcn.pdf" target="_blank"
+                    rel="noopener noreferrer">JuryGCN: Quantifying Jackknife Uncertainty on Graph Convolutional
+                    Networks</a></h3>
+                <p class="publication-authors">Jian Kang*, Qinghai Zhou*, Hanghang Tong</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">KDD 2022</p>
+                  <p class="publication-resources"> [<a href="files/slides/kang22jurygcn_slides.pdf" target="_blank"
+                      rel="noopener noreferrer">Slides</a>] [<a href="https://github.com/BlueWhaleZhou/JuryGCN_UQ"
+                      target="_blank" rel="noopener noreferrer">Code</a>] </p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="files/papers/kang22rawlsgcn.pdf" target="_blank"
+                    rel="noopener noreferrer">RawlsGCN: Towards Rawlsian Difference Principle on Graph Convolutional
+                    Network</a></h3>
+                <p class="publication-authors">Jian Kang, Yan Zhu, Yinglong Xia, Jiebo Luo, Hanghang Tong</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">WWW 2022</p>
+                  <p class="publication-resources"> [<a href="files/slides/kang22rawlsgcn_slides.pdf" target="_blank"
+                      rel="noopener noreferrer">Slides</a>] [<a href="https://github.com/jiank2/RawlsGCN"
+                      target="_blank" rel="noopener noreferrer">Code</a>] </p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="https://arxiv.org/abs/2111.12776" target="_blank"
+                    rel="noopener noreferrer">IMBENS: Ensemble Class-imbalanced Learning in Python</a>
+                </h3>
+                <p class="publication-authors">Zhining Liu, Jian Kang, Hanghang Tong, Yi Chang</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">arXiv:2111.12776</p>
+                  <p class="publication-resources">[<a href="https://imbalanced-ensemble.readthedocs.io/en/latest/"
+                      target="_blank" rel="noopener noreferrer">Webpage</a>] [<a
+                      href="https://github.com/ZhiningLiu1998/imbalanced-ensemble" target="_blank"
+                      rel="noopener noreferrer">Package</a>] </p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="files/papers/xie21fairrankvis.pdf" target="_blank"
+                    rel="noopener noreferrer">FairRankVis: A Visual Analytics Framework for Exploring Algorithmic
+                    Fairness in Graph Mining Models</a></h3>
+                <p class="publication-authors">Tiankai Xie, Yuxin Ma, Jian Kang, Hanghang Tong, Ross Maciejewski</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">TVCG, 2021</p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="files/papers/dong21redress.pdf" target="_blank"
+                    rel="noopener noreferrer">Individual Fairness for Graph Neural Networks: A Ranking based
+                    Approach</a></h3>
+                <p class="publication-authors">Yushun Dong, Jian Kang, Hanghang Tong, Jundong Li</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">KDD 2021</p>
+                  <p class="publication-resources">[<a href="https://github.com/yushundong/REDRESS" target="_blank"
+                      rel="noopener noreferrer">Code</a>] </p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="files/papers/wang20aurora.pdf" target="_blank"
+                    rel="noopener noreferrer">Graph Ranking Auditing: Problem Definitions and Fast Solutions</a></h3>
+                <p class="publication-authors">Meijia Wang, Jian Kang, Nan Cao, Yinglong Xia, Wei Fan, Hanghang Tong</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">TKDE, 2020</p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="files/papers/kang20inform.pdf" target="_blank"
+                    rel="noopener noreferrer">InFoRM: Individual Fairness on Graph Mining</a></h3>
+                <p class="publication-authors">Jian Kang, Jingrui He, Ross Maciejewski, Hanghang Tong</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">KDD 2020</p>
+                  <p class="publication-resources"> [<a href="files/slides/kang20inform_slides.pdf" target="_blank"
+                      rel="noopener noreferrer">Slides</a>] [<a href="https://github.com/jiank2/inform" target="_blank"
+                      rel="noopener noreferrer">Code</a>] </p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="files/papers/kang19n2n.pdf" target="_blank"
+                    rel="noopener noreferrer">N2N: Network Derivative Mining</a></h3>
+                <p class="publication-authors">Jian Kang, Hanghang Tong</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">CIKM 2019</p>
+                  <p class="publication-resources"> [<a href="files/slides/kang19n2n_slides.pdf" target="_blank"
+                      rel="noopener noreferrer">Slides</a>] [<a href="files/code/n2n.zip" target="_blank"
+                      rel="noopener noreferrer">Code</a>] </p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="files/papers/kang18xrank.pdf" target="_blank"
+                    rel="noopener noreferrer">X-Rank: Explainable Ranking in Complex Multi-layered Networks</a></h3>
+                <p class="publication-authors">Jian Kang*, Scott Freitas*, Haichao Yu, Yinglong Xia, Nan Cao, Hanghang
+                  Tong</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">CIKM 2018</p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title"><a href="https://ieeexplore.ieee.org/document/8622563" target="_blank"
+                    rel="noopener noreferrer">AURORA: Auditing PageRank on Large Graphs</a></h3>
+                <p class="publication-authors">Jian Kang, Meijia Wang, Nan Cao, Yinglong Xia, Wei Fan, Hanghang Tong</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">IEEE Big Data 2018</p>
+                  <p class="publication-resources"> [<a href="files/slides/kang18aurora_slides.pdf" target="_blank"
+                      rel="noopener noreferrer">Slides</a>] [<a href="files/code/aurora-v2.zip" target="_blank"
+                      rel="noopener noreferrer">Code</a>] <em>(check out the updated results in our TKDE paper)</em>
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="publication-row">
+              <article>
+                <h3 class="publication-title">Visual Mining of Multi-sourced Networks</h3>
+                <p class="publication-authors">Haichao Yu, Jian Kang, Yinglong Xia, Nan Cao, Hanghang Tong</p>
+                <div class="publication-details">
+                  <p class="publication-detail publication-venue">ChinaVis 2018</p>
+                </div>
+              </article>
+            </li>
+          </ol>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner"><a class="footer-name" href="index.html">Jian Kang<span>MBZUAI · Statistics &amp; Data
+            Science · Computer Science</span></a>
+        <div><a href="index.html#contact">Contact</a><a href="#main" class="back-top">Back to top</a></div>
+      </div>
     </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 
 </html>

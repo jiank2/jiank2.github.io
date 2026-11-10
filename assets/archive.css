@@ -1,0 +1,158 @@
+/* Talks, service, teaching, and tutorial archives. */
+.archive-header { padding-bottom: 22px; }
+.archive-layout { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 34px; align-items: start; padding-bottom: 35px; }
+.archive-sidebar { position: sticky; top: 96px; }
+.archive-sidebar nav { display: flex; flex-direction: column; align-items: stretch; gap: 3px; }
+.archive-sidebar .eyebrow { margin: 0 0 11px; color: #202124; font-size: var(--small-text-size); font-weight: 700; text-transform: none; letter-spacing: 0; }
+.archive-sidebar a { color: #0055b8; font-size: var(--small-text-size); line-height: 1.5; text-decoration: none; padding: 7px 0; border: 0; }
+.archive-sidebar a:hover, .archive-sidebar a:focus-visible { color: #12385b; background: transparent; text-decoration: underline; }
+.archive-content { min-width: 0; }
+.archive-section { margin: 0 0 32px; scroll-margin-top: 96px; }
+.archive-section:last-child { margin-bottom: 0; }
+.archive-section-heading { padding: 0 0 9px; background: transparent; border: 0; border-bottom: 2px solid #12385b; margin-bottom: 3px; }
+.archive-section-heading h2 { font-family: Arial, sans-serif; font-size: var(--section-title-size); font-weight: 700; line-height: 1.35; margin: 0; color: #12385b; letter-spacing: 0; }
+.talk-entry { padding: 16px 0; border-bottom: 1px solid #c7d0d8; }
+.talk-entry h3 { color: #202124; font-family: Arial, sans-serif; font-size: var(--text-size); line-height: 1.6; margin: 0; font-weight: 700; letter-spacing: 0; }
+.talk-entry h3 a { color: #0055b8; font-size: var(--small-text-size); white-space: nowrap; }
+.talk-venues { color: #303b45; font-size: var(--text-size); line-height: 1.6; margin-top: 7px; }
+.talk-venues ul { padding-left: 20px; margin: 0; }
+.talk-venues li { margin: 4px 0; }
+.service-list { list-style: none; margin: 0; padding: 0; }
+.service-list > li { padding: 10px 0; border-bottom: 1px solid #c7d0d8; color: #202124; font-size: var(--text-size); line-height: 1.6; }
+.service-list span { color: #b02a46; font-weight: 700; }
+.journal-list { padding-top: 12px; font-size: var(--text-size); line-height: 1.65; color: #202124; }
+.course-grid { display: block; }
+/* Compatibility for older preview markup: code, course name, term. */
+.course-card { display: grid; grid-template-columns: 90px minmax(0,1fr) 110px; align-items: baseline; gap: 24px; padding: 13px 0; }
+.course-card:first-child { padding-top: 0; }
+.course-card:last-child { padding-bottom: 0; }
+.course-code { margin: 0; color: #43556a; font-size: var(--text-size); line-height: 1.5; white-space: nowrap; }
+.course-card h2, .course-card h3 { color: #202124; font-family: Arial, sans-serif; font-size: var(--text-size); font-weight: 400; line-height: 1.5; margin: 0; letter-spacing: 0; }
+.course-term { padding: 0; margin: 0; color: #43556a; font-size: var(--text-size); line-height: 1.5; white-space: nowrap; }
+.tutorial-back { display: inline-block; color: #0055b8; font-size: var(--small-text-size); margin-top: 24px; text-decoration: none; }
+.tutorial-back:hover { text-decoration: underline; }
+.tutorial-page .page-header { padding-top: 22px; padding-bottom: 20px; }
+.tutorial-page .page-header h1 { max-width: none; font-size: 32px; }
+.event-archive-note { border: 1px dashed #6684a1; border-radius: 0; background: #fff; color: #303b45; display: flex; gap: 11px; padding: 12px 15px; font-size: var(--small-text-size); line-height: 1.6; margin: 0 0 26px; }
+.event-archive-note p { margin: 0; }
+.event-archive-note > span { color: #12385b; }
+.tutorial-page .archive-section > p { color: #202124; font-size: var(--text-size); line-height: 1.65; margin: 17px 0; }
+.tutorial-page .archive-section > ul { color: #202124; font-size: var(--text-size); line-height: 1.65; padding-left: 22px; }
+.tutorial-resource-links { display: flex; gap: 12px; flex-wrap: wrap; padding: 17px 0; }
+.tutorial-resource-links .button { display: inline-flex; align-items: center; gap: 10px; border: 1px solid #0055b8; border-radius: 8px; padding: 10px 14px; text-decoration: none; font-size: var(--small-text-size); font-weight: 700; background: #fff; color: #0055b8; }
+.tutorial-resource-links .button:hover { background: #edf3f9; color: #12385b; }
+.tutorial-resource-links .resource-primary { background: #0055b8; color: #fff; border-color: #0055b8; }
+.tutorial-resource-links .resource-primary:hover { background: #12385b; color: #fff; }
+.slides-preview { border: 1px solid #8b9faf; border-radius: 8px; overflow: hidden; background: #fff; }
+.slides-preview summary { padding: 11px 14px; color: #0055b8; font-size: var(--small-text-size); font-weight: 700; cursor: pointer; }
+.slides-preview summary:focus-visible { outline-offset: -3px; }
+.slides-preview iframe { border: 0; border-top: 1px solid #8b9faf; width: 100%; height: 500px; display: block; }
+.slides-preview p { font-size: var(--small-text-size); padding: 0 14px; }
+.tutorial-outline > ul { padding-left: 0; list-style: none; margin: 0; }
+.tutorial-outline > ul > li { padding: 15px 0; border-bottom: 0; color: #202124; font-size: var(--text-size); font-weight: 700; line-height: 1.65; }
+.tutorial-outline ul ul { padding-left: 21px; font-size: var(--text-size); font-weight: 400; color: #202124; line-height: 1.65; margin-top: 7px; }
+.tutorial-outline ul ul li { padding: 2px 0; }
+.speaker-profile { display: grid; grid-template-columns: 90px minmax(0, 1fr); gap: 21px; padding: 22px 0; border-bottom: 0; }
+.speaker-profile img { width: 90px; height: 106px; object-fit: cover; border-radius: 0; }
+.speaker-profile p { margin: 0; font-size: var(--text-size); line-height: 1.65; color: #202124; }
+.speaker-profile p strong { display: block; margin-bottom: 8px; font-size: 18px; color: #12385b; }
+.tutorial-references ul { margin: 0; padding: 6px 0 0 22px; }
+.tutorial-references li { padding: 9px 0 9px 4px; border-bottom: 0; font-size: var(--text-size); line-height: 1.65; color: #303b45; }
+@media (max-width: 900px) {
+  .archive-layout { grid-template-columns: 150px minmax(0,1fr); gap: 26px; }
+}
+@media (max-width: 680px) {
+  .tutorial-page .page-header h1 { font-size: 30px; }
+  .archive-layout { display: block; padding-bottom: 25px; }
+  .archive-sidebar { position: static; margin: 0 0 24px; }
+  .archive-sidebar nav { flex-direction: row; flex-wrap: wrap; gap: 4px 19px; padding-bottom: 12px; border-bottom: 1px solid #aebbc7; }
+  .archive-sidebar .eyebrow { flex-basis: 100%; margin-bottom: 2px; }
+  .archive-sidebar a { border: 0; padding: 5px 0; background: transparent; }
+  .archive-section { margin-bottom: 28px; scroll-margin-top: 85px; }
+  .talk-entry { padding: 15px 0; }
+  .speaker-profile { grid-template-columns: 1fr; gap: 14px; }
+  .speaker-profile img { width: 80px; height: 95px; }
+  .slides-preview iframe { height: 380px; }
+}
+
+/* Talks and Service use the same section rhythm as Publications. */
+.archive-overview .archive-header {
+  padding-bottom: 0;
+  margin-bottom: 34px;
+  border-bottom: 0;
+}
+.archive-overview .archive-layout { display: block; padding-bottom: 0; }
+.archive-overview .archive-section { margin: 0; }
+.archive-overview .archive-section + .archive-section { margin-top: 42px; }
+.archive-overview .archive-section-heading {
+  padding: 0;
+  margin: 0 0 18px;
+  border: 0;
+}
+.archive-overview .archive-section-heading h2 {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: var(--section-title-size);
+  line-height: 1.3;
+}
+.archive-overview .archive-section-heading h2::after {
+  content: "";
+  flex: 1;
+  min-width: 24px;
+  height: 1px;
+  margin-left: 7px;
+  background: #e0e5eb;
+}
+.archive-overview .talk-entry:first-child,
+.archive-overview .service-list > li:first-child { padding-top: 0; }
+.archive-overview .talk-entry,
+.archive-overview .service-list > li { border-bottom: 0; }
+.archive-overview .talk-entry:last-child,
+.archive-overview .service-list > li:last-child { padding-bottom: 0; border-bottom: 0; }
+.archive-overview .journal-list { padding-top: 0; }
+.archive-overview .journal-list p { margin-bottom: 0; }
+@media (max-width: 600px) {
+  .archive-overview .archive-header { margin-bottom: 28px; }
+  .archive-overview .archive-section + .archive-section { margin-top: 34px; }
+}
+
+/* Talk titles stay quiet; event labels and venue details supply hierarchy. */
+.talks-page .talk-entry h3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.talks-page .talk-venues {
+  margin-top: 6px;
+  color: #4b5560;
+  font-size: var(--text-size);
+}
+.talks-page .tutorial-entry {
+  display: grid;
+  grid-template-columns: 100px minmax(0, 1fr);
+  column-gap: 24px;
+  align-items: baseline;
+  padding: 13px 0;
+}
+.tutorial-event-label {
+  margin: 0;
+  color: #43556a;
+  font-size: var(--small-text-size);
+  line-height: 1.5;
+  white-space: nowrap;
+}
+.tutorial-entry-body { min-width: 0; }
+.talk-resources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  margin-top: 6px;
+  font-size: var(--small-text-size);
+  line-height: 1.5;
+}
+.talk-resources a { text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 600px) {
+  .talks-page .tutorial-entry { grid-template-columns: minmax(0, 1fr); row-gap: 5px; }
+  .course-card { grid-template-columns: 76px minmax(0, 1fr) 94px; column-gap: 10px; }
+}

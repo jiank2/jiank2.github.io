@@ -1,0 +1,12 @@
+Profile icons reused from assets already present in the source website.
+
+Google Scholar: Academicons 1.9.3 by James Walsh and Katja Bercic,
+source svg/google-scholar.svg.
+The source SVG identifies the SIL Open Font License: http://scripts.sil.org/OFL
+Its path is embedded without geometry changes; the page sets the display color.
+
+LinkedIn and X: Font Awesome Free 6.7.2, Copyright 2024 Fonticons, Inc.
+https://fontawesome.com
+SVG icons: Creative Commons Attribution 4.0.
+https://creativecommons.org/licenses/by/4.0/
+The original attribution comments are retained with the inline SVGs.

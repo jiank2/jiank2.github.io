@@ -1,0 +1,31 @@
+/* Teaching-specific styles are paired with the current page markup. */
+.teaching-page .course-grid { display: block; width: 100%; padding: 0; border: 0; }
+.teaching-page .course-card {
+  display: grid;
+  grid-template-columns: 90px minmax(0, 1fr) 110px;
+  align-items: baseline;
+  gap: 24px;
+  width: 100%;
+  padding: 13px 0;
+  border: 0;
+}
+.teaching-page .course-card:first-child { padding-top: 0; }
+.teaching-page .course-card:last-child { padding-bottom: 0; }
+.teaching-page .course-code,
+.teaching-page .course-term,
+.teaching-page .course-card h3 {
+  margin: 0;
+  padding: 0;
+  font-size: var(--text-size);
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+}
+.teaching-page .course-code,
+.teaching-page .course-term { color: #43556a; white-space: nowrap; }
+.teaching-page .course-code { color: #202124; }
+.teaching-page .course-term { text-align: right; }
+.teaching-page .course-card h3 { color: #202124; }
+@media (max-width: 600px) {
+  .teaching-page .course-card { grid-template-columns: 76px minmax(0, 1fr) 94px; column-gap: 10px; }
+}
